@@ -226,7 +226,8 @@ background: linear-gradient(
   cursor:pointer;
 }
 .about-me-section{
-  height:520px;
+  min-height:520px;
+  height: auto;
   width:100%;
   display:flex;
   justify-content:center;
@@ -271,6 +272,38 @@ background: linear-gradient(
 .list-item{
   width:90%;
 }
+.project-show-panel{
+  height: 400px;
+  background: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px 0px 20px;
+}
+.project-img-section{
+  width:50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-desc{
+  width:50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:10px;
+  text-align: justify;
+  
+}
+.project-desc .label-tag{
+  width: 100px;
+  translate: 0px;
+}
+
 .list-item ul{
   list-style: none;
   display: flex;
@@ -283,4 +316,30 @@ background: linear-gradient(
   background: #e2e8f0;;
   padding: 10px 7px;
   border-radius: 10px;
+}
+.project-desc ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.project-desc ul li{
+  background: #e2e8f0;;
+  padding: 10px 7px;
+  border-radius: 10px;
+}
+.gen-btn{
+  height: 40px;
+  width:150px;
+  border:none;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 8px 20px rgba(60, 111, 245, 0.18);
+  transition: all 0.5s ease;
+}
+.gen-btn:hover{
+  transform: scale(1.08);
 }

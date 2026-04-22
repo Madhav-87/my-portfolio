@@ -141,15 +141,45 @@ function App() {
             </div>
           </div>
         </div>
-         <div className="about-me-section">
-          <div className="gap-10-column text-center">
+        <div className="about-me-section" style={{ paddingBottom: "80px" }}>
+          <div className="gap-10-column text-center d-flex" style={{ paddingTop: "80px" }}>
             <div className="color-blue fw-5">FEATURED WORK</div>
             <div className="heading-4">Most recent project</div>
             <div className="color-grey">A glimpse of what i build.</div>
           </div>
-          <div className="d-flex gap-25">
-            
+          <div className="project-show-panel">
+            <div className='project-img-section'>
+              <div className='image-container' style={{width:"100%"}}></div>
+            </div>
+            <div className='project-desc'>
+              <div className="label-tag">
+                  <i className="fa-solid fa-star"></i>
+                <span>Featured</span>
+              </div>
+              <div className='heading-4'>
+               Growth  Tracker
+              </div>
+              <div className='subtxt'>Growth Tracker is a personal development web application designed to help users set meaningful goals, track daily progress, and build long-term habits. It provides structured planning, performance analytics, and visual reports to improve consistency and productivity. The platform focuses on transforming small daily actions into measurable growth over time.</div>
+              <div>
+                <ul>
+                  <li>React</li>
+                  <li>Express</li>
+                  <li>MYSQL</li>
+                </ul>
+              </div>
+              <div>
+                <button className='magic-btn gen-btn'>Code</button>
+              </div>
+            </div>
           </div>
+        </div>
+        <div className="about-me-section">
+          <div className="gap-10-column text-center d-flex" >
+            <div className="color-blue fw-5">CERTIFICATIONS</div>
+            <div className="heading-4">Continuous Learning</div>
+            <div className="color-grey">Recent credentials.</div>
+          </div>
+          
         </div>
       </main>
     </>
