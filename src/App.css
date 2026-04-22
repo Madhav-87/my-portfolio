@@ -4,6 +4,39 @@
 body{
   margin: 0px;
 }
+.d-flex{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.gap-5, .gap-25{
+  display:flex;
+  gap:5px;
+}
+.gap-25{
+  gap:25px;
+}
+.gap-10-column , .gap-20-column{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.gap-20-column{
+  gap:20px;
+}
+.text-center{
+  text-align:center;
+}
+.color-blue{
+  color:blue;
+}
+.color-grey{
+  color:grey;
+}
+.fw-5{
+  font-weight:500;
+}
 .header-div{
   height:65px;
   width:100%;
@@ -34,7 +67,6 @@ body{
 .profile-icon{
   height:40px;
   width:40px;
-  background: linear-gradient(135deg, #6C7AE0, #8FA4F3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +86,6 @@ body{
   border-radius: 10px;
 }
 .download-resume-btn{
-  background: linear-gradient(135deg, #6C7AE0, #8FA4F3);
   padding: 10px;
   border-radius: 13px;
   display: flex;
@@ -63,4 +94,193 @@ body{
   gap: 10px;
   color: white;
   font-weight: 600;
+}
+main{
+  min-height:100vh;
+  max-width:100vw;
+  background: linear-gradient(
+  135deg,
+  #f5f7fa 0%,
+  #e4ecf7 40%,
+  #d4d9f5 70%,
+  #c3c7f0 100%
+);
+}
+.intro-panel{
+  height:650px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding-left:0px;
+  padding-right:0px;
+  gap:10px;
+}
+.image-container{
+  height: 350px; /* adjust 320–400px as needed */
+  width: 40%;
+
+  background: #f7f8fb; /* light card background */
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* soft shadow (modern UI style) */
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.05),
+    0 4px 10px rgba(0, 0, 0, 0.03);
+
+  /* optional smooth look */
+  transition: 0.3s ease;
+}
+.intro-info-section{
+  height:100%;
+  width:40%;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+  padding-right:10px;
+}
+.label-tag{
+  height:25px;
+  width:230px;
+  border:1px solid black;
+  border-radius:20px;
+  padding-right:10px;
+  padding-left:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  background-color:  #e2e8f0;
+  border-color:grey;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  translate:-70px;
+}
+.bg-green{
+  background:green;
+  color:white;
+  border-radius:50%;
+}
+.heading-3,.heading-4{
+  font-size:40px;
+  font-weight:700;
+  color:black;
+}
+.heading-4{
+  font-size:35px;
+}
+.intro-info-content p {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  font-size:20px;
+  color:grey;
+}
+.btn-section button{
+  padding:10px;
+  width:200px;
+  justify-self:left;
+  box-shadow: 0 8px 20px rgba(60, 111, 245, 0.18);
+  border-radius:10px;
+  border:1px solid grey; 
+}
+.btn-section{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:left;
+  min-height:90px
+}
+.magic-btn{
+background: linear-gradient(
+  90deg,
+  #3c6ff5 0%,
+  #8685ff 100%
+);
+  color:white;
+  border-radius:10px;
+}
+.socio-media-label-sec{
+  width:100%;
+  font-size:23px;
+  display:flex;
+  gap:25px;
+  align-items:center;
+  min-height:90px;
+}
+.subtxt{
+  font-size:16px;
+  vertical-align:center;
+  color:grey;
+  line-height:25px;
+}
+.cursor-pointer{
+  cursor:pointer;
+}
+.about-me-section{
+  height:520px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  border:1px solid black;
+  gap:40px;
+  background: linear-gradient(
+    180deg,
+  #f6f8fc 0%,
+  #e9edf5 50%,
+  #eef2f7 100%
+);
+}
+.icon-badge{
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.about-Container{
+  height:150px;
+  width:290px;
+  border:1px solid black;
+  background:white;
+  border-radius:10px;
+  padding:20px;
+  transition:all 0.5s ease;
+  border:1px solid grey;
+}
+.about-Container:hover{
+   box-shadow: 
+  0 6px 20px rgba(0, 0, 0, 0.05),
+  0 2px 6px rgba(0, 0, 0, 0.04);
+}
+.box-title{
+  font-size:18px;
+  font-weight:600;
+}
+.list-item{
+  width:90%;
+}
+.list-item ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  padding: 0px;
+  margin: 0px;
+}
+.list-item ul li{
+  background: #e2e8f0;;
+  padding: 10px 7px;
+  border-radius: 10px;
 }
