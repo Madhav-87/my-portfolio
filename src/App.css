@@ -8,6 +8,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
+  flex-wrap: wrap;
 }
 .gap-5, .gap-25{
   display:flex;
@@ -342,4 +343,42 @@ background: linear-gradient(
 }
 .gen-btn:hover{
   transform: scale(1.08);
+}
+.cert-container{
+  height: 60px;
+  width:350px;
+  background: white;
+  display: flex;
+  padding: 10px;
+  border-radius: 12px;
+  border:1px solid grey;
+}
+.cert-icon{
+  width:20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cert-icon .material-symbols-outlined{
+  background-color: rgb(200, 229, 255);
+  padding: 10px;
+  border-radius: 50%;
+  color:blue;
+}
+.cert-info-panel{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:5px;
+
+}
+.cert-title{
+  font-size: 18px;
+  font-weight:600;
+}
+.cert-subtxt{
+  font-size: 16px;
+  color:grey;
 }
