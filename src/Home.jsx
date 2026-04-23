@@ -146,7 +146,10 @@ function Home() {
                 </ul>
               </div>
               <div>
-                <button className='magic-btn gen-btn'>Code</button>
+                <button className='magic-btn gen-btn flex flex-center gap-10'>
+                  <span class="fa-brands fa-github cursor-pointer"></span>
+                  <span>Code</span>
+                </button>
               </div>
             </div>
           </div>

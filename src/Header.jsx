@@ -18,7 +18,7 @@ export default function Header({activeEle}) {
                     <Link className={`nav-items ${active==="Home" ? 'active-item' : ""}`} to="/">Home</Link>
                     <Link className={`nav-items ${active==="Projects" ? 'active-item' : ""}`} to="/projects">Projects</Link>
                     <div className={`nav-items ${active==="Experience" ? 'active-item' : ""}`}>Experience</div>
-                    <div className={`nav-items ${active==="Contact" ? 'active-item' : ""}`}>Contact</div>
+                    <Link className={`nav-items ${active==="Contact" ? 'active-item' : ""}`} to="/contact">Contact</Link>
                 </div>
                 <div className='header-box-20'>
                     <div className='download-resume-btn magic-btn'>
