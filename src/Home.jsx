@@ -1,0 +1,222 @@
+import { useState } from 'react'
+import './App.css'
+import './utility.css';
+import './responsive.css';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+function Home() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <Header activeEle={"Home"}/>
+      <main className='mainHome'>
+        <div className="intro-panel">
+          <div className="intro-info-section">
+            <div className="label-tag">
+              <span class="material-symbols-outlined bg-green">
+                task_alt
+              </span>
+              <span>Available for opportunities</span>
+            </div>
+            <div className="intro-info-content">
+              <p>
+                <span className="heading-3">
+                  Hi, I'm Madhav Full-Stack Developer.
+                </span>
+                <span style={{ lineHeight: "30px" }}>
+                  Final-year Computer Science student passionate about building products that solve real-world problems. I have hands-on experience with React, JavaScript, and Node.js.
+                </span>
+              </p>
+            </div>
+            <div className="btn-section">
+              <div><button className="magic-btn">View my work</button></div>
+              <div><button>Download CV</button></div>
+            </div>
+            <div className="socio-media-label-sec">
+              <div class="fa-brands fa-github cursor-pointer"></div>
+              <div class="fa-brands fa-linkedin cursor-pointer"></div>
+              <div class="fa-regular fa-envelope cursor-pointer"></div>
+              <div className="d-flex gap-5"><span class="material-symbols-outlined">explore_nearby</span> <span className="subtxt">Nanded, India</span></div>
+            </div>
+          </div>
+          <div className="image-container"></div>
+        </div>
+        <div className="about-me-section">
+          <div className="gap-10-column text-center">
+            <div className="color-blue fw-5">ABOUT</div>
+            <div className="heading-4">A quick intro</div>
+            <div className="color-grey">Here's what makes me trick.</div>
+          </div>
+          <div className="d-flex gap-25">
+            <div className="about-Container gap-20-column cursor-pointer">
+              <div className="icon-badge magic-btn">
+                <span class="material-symbols-outlined">
+                  school
+                </span>
+              </div>
+              <div className="box-title">Education</div>
+              <div className="subtxt">B.C.A CS at MGM - CGPA 9.42</div>
+            </div>
+            <div className="about-Container gap-20-column cursor-pointer">
+              <div className="icon-badge magic-btn">
+                <span class="material-symbols-outlined">
+                  code_xml
+                </span>
+              </div>
+              <div className="box-title">What i do</div>
+              <div className="subtxt">Build full-stack web apps with JavaScript, Bootstrap, React & Node.</div>
+            </div>
+            <div className="about-Container gap-20-column cursor-pointer">
+              <div className="icon-badge magic-btn">
+                <span class="material-symbols-outlined">
+                  school
+                </span>
+              </div>
+              <div className="box-title">Education</div>
+              <div className="subtxt">B.C.A CS at MGM - CGPA 9.42</div>
+            </div>
+          </div>
+        </div>
+        <div className="about-me-section">
+          <div className="gap-10-column text-center">
+            <div className="color-blue fw-5">SKILLS</div>
+            <div className="heading-4">Tools I use daily</div>
+            <div className="color-grey">From design to deployment.</div>
+          </div>
+          <div className="d-flex gap-25">
+            <div className="about-Container gap-20-column cursor-pointer">
+              <div className="box-title color-blue">FrontEnd</div>
+              <div className='list-item'>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React.Js</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+            <div className="about-Container gap-20-column cursor-pointer">
+              <div className="box-title color-blue">BackEnd</div>
+              <div className='list-item'>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>REST API</li>
+                  <li>JWT Tokens</li>
+                </ul>
+              </div>
+            </div>
+            <div className="about-Container gap-20-column cursor-pointer">
+              <div className="box-title color-blue">Database</div>
+              <div className='list-item'>
+                <ul>
+                  <li>SQL</li>
+                  <li>MYSQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="about-me-section" style={{ paddingBottom: "80px" }}>
+          <div className="gap-10-column text-center d-flex" style={{ paddingTop: "80px" }}>
+            <div className="color-blue fw-5">FEATURED WORK</div>
+            <div className="heading-4">Most recent project</div>
+            <div className="color-grey">A glimpse of what i build.</div>
+          </div>
+          <div className="project-show-panel">
+            <div className='project-img-section'>
+              <div className='image-container' style={{ width: "100%" }}></div>
+            </div>
+            <div className='project-desc'>
+              <div className="label-tag">
+                <i className="fa-solid fa-star"></i>
+                <span>Featured</span>
+              </div>
+              <div className='heading-4'>
+                Growth  Tracker
+              </div>
+              <div className='subtxt'>Growth Tracker is a personal development web application designed to help users set meaningful goals, track daily progress, and build long-term habits. It provides structured planning, performance analytics, and visual reports to improve consistency and productivity. The platform focuses on transforming small daily actions into measurable growth over time.</div>
+              <div>
+                <ul>
+                  <li>React</li>
+                  <li>Express</li>
+                  <li>MYSQL</li>
+                </ul>
+              </div>
+              <div>
+                <button className='magic-btn gen-btn'>Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="about-me-section">
+          <div className="gap-10-column text-center d-flex" >
+            <div className="color-blue fw-5">CERTIFICATIONS</div>
+            <div className="heading-4">Continuous Learning</div>
+            <div className="color-grey">Recent credentials.</div>
+          </div>
+          <div className="d-flex gap-25">
+            <div className='cert-container'>
+              <div className='cert-icon'>
+                <span class="material-symbols-outlined">
+                  license
+                </span>
+              </div>
+              <div className='cert-info-panel'>
+                <div className='cert-title'>JavaScript</div>
+                <div className='cert-subtxt'>Infosys Springboard</div>
+              </div>
+            </div>
+            <div className='cert-container'>
+              <div className='cert-icon'>
+                <span class="material-symbols-outlined">
+                  license
+                </span>
+              </div>
+              <div className='cert-info-panel'>
+                <div className='cert-title'>Introduction to Git and GitHub</div>
+                <div className='cert-subtxt'>Google / Coursera</div>
+              </div>
+            </div>
+            <div className='cert-container'>
+              <div className='cert-icon'>
+                <span class="material-symbols-outlined">
+                  license
+                </span>
+              </div>
+              <div className='cert-info-panel'>
+                <div className='cert-title'>Google Ai Essentails</div>
+                <div className='cert-subtxt'>Google / Coursera</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='about-me-section'>
+          <div className='flex flex-center flex-col gap-15 communication-container text-center'>
+            <div>
+              <span class="material-symbols-outlined color-blue rocket-icon">
+                rocket_launch
+              </span>
+            </div>
+            <div>
+              <span className='h-5'>Let's build something great.</span>
+            </div>
+            <div>
+              <span className='subtxt '>
+                I'm open to internship and full-time roles. Drop me a line - I usually reply within a day.
+              </span>
+            </div>
+            <div>
+              <button className='magic-btn gen-btn'>Get in touch</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer/>
+    </>
+  )
+}
+
+export default Home

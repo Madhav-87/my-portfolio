@@ -1,0 +1,43 @@
+.mainProject{
+    background:  #F5F7FA;
+}
+.project-container{
+    min-height: 100vh;
+    height:auto;
+    flex-wrap: wrap;
+    padding: 50px 20px 100px 20px;
+}
+.project-box{
+  height:600px;
+  width:470px;
+  border:1px solid black;  
+  padding: 10px;
+  text-align: justify;
+  border-radius: 12px;
+  transition: all 1s ease;
+}
+.project-box:hover{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+    z-index: 1;
+}
+.projectbox-img-container{
+    height: 40%;
+    width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 12px;
+}
+.project-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.project-container ul li {
+  background: #e2e8f0;
+  ;
+  padding: 10px 7px;
+  border-radius: 10px;
+}

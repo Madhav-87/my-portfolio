@@ -96,6 +96,7 @@ body {
 .nav-items {
   color: grey;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .active-item {
@@ -116,7 +117,7 @@ body {
   font-weight: 600;
 }
 
-main {
+.mainHome {
   min-height: 100vh;
   max-width: 100vw;
   background: linear-gradient(135deg,
@@ -454,8 +455,7 @@ main {
 .footer-container {
   height: 90px;
   width: 100%;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   background: #f8fafc;
 
 }
