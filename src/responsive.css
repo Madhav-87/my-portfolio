@@ -1,0 +1,267 @@
+/* =============================================
+   RESPONSIVE.CSS — Media Queries Only
+   Import this AFTER App.css and utility.css
+   Usage: import './responsive.css'
+   ============================================= */
+
+/* ─────────────────────────────────────────────
+   TABLET  (601px – 1024px)
+───────────────────────────────────────────── */
+@media (max-width: 1024px) and (min-width: 601px) {
+
+  /* Header */
+  .header-div {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  .header-box-20 {
+    width: 30%;
+  }
+
+  .header-box-50 {
+    width: 100%;
+    order: 3;
+    padding: 8px 0;
+    gap: 20px;
+  }
+
+  /* Intro panel */
+  .intro-panel {
+    height: auto;
+    padding: 60px 20px;
+    gap: 30px;
+    width:100%;
+    background: linear-gradient(135deg,
+      #f5f7ff 0%,
+      #eef2ff 40%,
+      #e6ebff 100%);
+}
+  
+  .intro-info-section {
+    width: 90%;
+    align-items: flex-start;
+  }
+
+  .image-container {
+    width: 70%;
+    height: 280px;
+  }
+
+  .label-tag {
+    translate: 0px;
+  }
+
+  /* About / Skills cards */
+  .about-Container {
+    width: 230px;
+    height: auto;
+    min-height: 150px;
+  }
+
+  /* Project panel */
+  .project-show-panel {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .project-img-section,
+  .project-desc {
+    width: 100%;
+  }
+
+  .project-img-section .image-container {
+    width: 100%;
+    height: 220px;
+  }
+
+  /* Certifications */
+  .cert-container {
+    width: 280px;
+  }
+
+  /* CTA communication box */
+  .communication-container {
+    width: 70%;
+  }
+
+  /* Section headings section */
+  .about-me-section {
+    padding: 40px 20px;
+  }
+}
+
+
+/* ─────────────────────────────────────────────
+   MOBILE  (≤ 600px)
+───────────────────────────────────────────── */
+@media (max-width: 600px) {
+
+  /* ── Header ── */
+  .header-div {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+  .header-box-20 {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .header-box-50 {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 4px 0;
+  }
+
+  /* Hide resume button text, keep icon only */
+  .download-resume-btn span:last-child {
+    display: none;
+  }
+
+  .download-resume-btn {
+    padding: 8px 12px;
+  }
+
+  /* ── Intro Panel ── */
+  .intro-panel {
+    height: auto;
+    flex-direction: column-reverse;
+    padding: 40px 16px 30px;
+    gap: 24px;
+    background: linear-gradient(135deg,
+      #f5f7ff 0%,
+      #eef2ff 40%,
+      #e6ebff 100%);
+}
+  
+
+  .intro-info-section {
+    width: 100%;
+    align-items: flex-start;
+    padding-right: 0;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 220px;
+    animation: none; /* optional: disable on mobile for perf */
+  }
+
+  .label-tag {
+    translate: 0px;
+    width: auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 12px;
+  }
+
+  .heading-3 {
+    font-size: 26px;
+  }
+
+  .heading-4 {
+    font-size: 22px;
+  }
+
+  .intro-info-content p {
+    font-size: 15px;
+  }
+
+  .btn-section {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .btn-section button {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  .socio-media-label-sec {
+    font-size: 18px;
+    flex-wrap: wrap;
+    gap: 16px;
+    min-height: auto;
+  }
+
+  /* ── About / Skills / Sections ── */
+  .about-me-section {
+    min-height: auto;
+    padding: 40px 16px;
+    gap: 24px;
+  }
+
+  /* Stack card rows vertically */
+  .d-flex.gap-25 {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .about-Container {
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    min-height: 120px;
+  }
+
+  /* ── Project Panel ── */
+  .project-show-panel {
+    flex-direction: column;
+    height: auto;
+    width: 92%;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .project-img-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-img-section .image-container {
+    width: 100%;
+    height: 180px;
+    animation: none;
+  }
+
+  .project-desc {
+    width: 100%;
+    text-align: left;
+  }
+
+  .project-desc .label-tag {
+    translate: 0px;
+  }
+
+  /* ── Certifications ── */
+  .cert-container {
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    min-height: 60px;
+  }
+
+  /* ── CTA / Communication Box ── */
+  .communication-container {
+    width: 90%;
+    height: auto;
+    padding: 24px 16px;
+  }
+
+  /* ── Footer ── */
+  .footer-container {
+    height: auto;
+    padding: 20px 16px;
+    text-align: center;
+  }
+}
