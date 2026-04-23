@@ -1,9 +1,10 @@
 .message-container{
-    height:550px;
+    height:570px;
     width:550px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 15px;
     border-radius: 12px;
+    background-color: white;
 }
 .message-container form{
     width: 100%;
@@ -11,7 +12,8 @@
     padding: 25px 15px 40px 15px;
 }
 form input{
-    height:30px;
+    height:35px;
+    font-size: 16px;
     padding: 0px 10px 0px 10px;
     margin-right: 20px;
     border-radius: 7px;
@@ -27,6 +29,7 @@ form textarea{
     padding: 10px 10px 10px 10px;
     border-radius: 7px;
     margin-right: 20px;
+    font-size: 16px;
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .tilt{

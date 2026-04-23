@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './Home';
 import Project from './Project';
 import Contact from './Contact';
+import Experience from './Experience';
 export default function App() {
   return (
     <Router>
@@ -10,6 +11,7 @@ export default function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/projects" element={<Project/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/experience" element={<Experience/>}/>
       </Routes>
     </Router>
   )
