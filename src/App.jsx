@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-
+import './utility.css';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -215,7 +215,32 @@ function App() {
             </div>
           </div>
         </div>
+        <div className='about-me-section'>
+          <div className='flex flex-center flex-col gap-15 communication-container text-center'>
+            <div>
+              <span class="material-symbols-outlined color-blue rocket-icon">
+                rocket_launch
+              </span>
+            </div>
+            <div>
+              <span className='h-5'>Let's build something great.</span>
+            </div>
+            <div>
+              <span className='subtxt '>
+                I'm open to internship and full-time roles. Drop me a line - I usually reply within a day.
+              </span>
+            </div>
+            <div>
+              <button className='magic-btn gen-btn'>Get in touch</button>
+            </div>
+          </div>
+        </div>
       </main>
+      <footer>
+        <div className='flex flex-center footer-container subtxt'>
+            © Madhav Bondhare. Crafted with care.
+        </div>
+      </footer>
     </>
   )
 }
