@@ -11,7 +11,7 @@
   height:600px;
   width:470px;
   border:1px solid black;  
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 20px 20px;
   text-align: justify;
   border-radius: 12px;
   transition: all 1s ease;
@@ -42,3 +42,90 @@
   padding: 10px 7px;
   border-radius: 10px;
 }
+
+/* ─────────────────────────────────────────
+   RESPONSIVE BREAKPOINTS
+   All existing rules above are untouched.
+───────────────────────────────────────── */
+ 
+/* Large tablet landscape — up to 1100px
+   Two cards side-by-side start to feel cramped */
+@media (max-width: 1100px) {
+    .project-box {
+        width: 70%;          /* two cards fit comfortably in a row */
+        height: auto;         /* let content drive height */
+    }
+ 
+    .projectbox-img-container {
+        height: 200px;        /* fixed px so image area doesn't collapse */
+    }
+}
+ 
+/* Tablet portrait — up to 768px
+   Single-column card layout */
+@media (max-width: 768px) {
+    .project-container {
+        padding: 36px 16px 80px 16px;
+    }
+ 
+    .project-box {
+        width: 90vw;
+        height: auto;
+        padding: 14px 16px;
+        border-radius: 10px;
+    }
+ 
+    .projectbox-img-container {
+        height: 180px;
+    }
+ 
+    .project-container ul li {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+ 
+/* Mobile — up to 480px */
+@media (max-width: 480px) {
+    .project-container {
+        padding: 28px 12px 64px 12px;
+    }
+ 
+    .project-box {
+        width: 95vw;
+        padding: 12px 14px;
+        border-radius: 8px;
+        border-color: rgba(0, 0, 0, 0.15); /* soften hard black border on small screens */
+    }
+ 
+    .projectbox-img-container {
+        height: 160px;
+        border-radius: 8px;
+    }
+ 
+    .project-container ul {
+        gap: 8px;
+    }
+ 
+    .project-container ul li {
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+}
+ 
+/* Extra-small phones — up to 360px */
+@media (max-width: 360px) {
+    .project-box {
+        width: 100%;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+ 
+    .projectbox-img-container {
+        height: 140px;
+        border-radius: 6px;
+    }
+}
+ 

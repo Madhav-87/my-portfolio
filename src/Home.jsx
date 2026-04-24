@@ -4,6 +4,7 @@ import './utility.css';
 import './responsive.css';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
+import { Link } from 'react-router-dom';
 function Home() {
   const [count, setCount] = useState(0)
 
@@ -14,7 +15,7 @@ function Home() {
         <div className="intro-panel">
           <div className="intro-info-section">
             <div className="label-tag">
-              <span class="material-symbols-outlined bg-green">
+              <span className="material-symbols-outlined bg-green">
                 task_alt
               </span>
               <span>Available for opportunities</span>
@@ -30,14 +31,14 @@ function Home() {
               </p>
             </div>
             <div className="btn-section">
-              <div><button className="magic-btn">View my work</button></div>
+              <div><Link to="/projects"><button className="magic-btn">View my work</button></Link></div>
               <div><button>Download CV</button></div>
             </div>
             <div className="socio-media-label-sec">
-              <div class="fa-brands fa-github cursor-pointer"></div>
-              <div class="fa-brands fa-linkedin cursor-pointer"></div>
-              <div class="fa-regular fa-envelope cursor-pointer"></div>
-              <div className="d-flex gap-5"><span class="material-symbols-outlined">explore_nearby</span> <span className="subtxt">Nanded, India</span></div>
+              <div className="fa-brands fa-github cursor-pointer color-blue-hover" onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_URL}`,"_blank")}}></div>
+              <div className="fa-brands fa-linkedin cursor-pointer color-blue-hover" onClick={()=>{window.open(`${import.meta.env.VITE_LINKEDIN_URL}`,"_blank")}}></div>
+              <div className="fa-regular fa-envelope cursor-pointer color-blue-hover"></div>
+              <div className="d-flex gap-5"><span className="material-symbols-outlined">explore_nearby</span> <span className="subtxt">Nanded, India</span></div>
             </div>
           </div>
           <div className="image-container"></div>
@@ -51,7 +52,7 @@ function Home() {
           <div className="d-flex gap-25">
             <div className="about-Container gap-20-column cursor-pointer">
               <div className="icon-badge magic-btn">
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                   school
                 </span>
               </div>
@@ -60,7 +61,7 @@ function Home() {
             </div>
             <div className="about-Container gap-20-column cursor-pointer">
               <div className="icon-badge magic-btn">
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                   code_xml
                 </span>
               </div>
@@ -69,7 +70,7 @@ function Home() {
             </div>
             <div className="about-Container gap-20-column cursor-pointer">
               <div className="icon-badge magic-btn">
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                   school
                 </span>
               </div>
@@ -119,8 +120,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="about-me-section" style={{ paddingBottom: "80px" }}>
-          <div className="gap-10-column text-center d-flex" style={{ paddingTop: "80px" }}>
+        <div className="about-me-section">
+          <div className="gap-10-column text-center d-flex" >
             <div className="color-blue fw-5">FEATURED WORK</div>
             <div className="heading-4">Most recent project</div>
             <div className="color-grey">A glimpse of what i build.</div>
@@ -146,8 +147,8 @@ function Home() {
                 </ul>
               </div>
               <div>
-                <button className='magic-btn gen-btn flex flex-center gap-10'>
-                  <span class="fa-brands fa-github cursor-pointer"></span>
+                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL}`,"_blank")}}>
+                  <span className="fa-brands fa-github cursor-pointer"></span>
                   <span>Code</span>
                 </button>
               </div>
@@ -163,7 +164,7 @@ function Home() {
           <div className="d-flex gap-25">
             <div className='cert-container'>
               <div className='cert-icon'>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                   license
                 </span>
               </div>
@@ -174,7 +175,7 @@ function Home() {
             </div>
             <div className='cert-container'>
               <div className='cert-icon'>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                   license
                 </span>
               </div>
@@ -185,7 +186,7 @@ function Home() {
             </div>
             <div className='cert-container'>
               <div className='cert-icon'>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                   license
                 </span>
               </div>
@@ -199,7 +200,7 @@ function Home() {
         <div className='about-me-section'>
           <div className='flex flex-center flex-col gap-15 communication-container text-center'>
             <div>
-              <span class="material-symbols-outlined color-blue rocket-icon">
+              <span className="material-symbols-outlined color-blue rocket-icon">
                 rocket_launch
               </span>
             </div>
@@ -212,7 +213,7 @@ function Home() {
               </span>
             </div>
             <div>
-              <button className='magic-btn gen-btn'>Get in touch</button>
+              <Link to="/contact"><button className='magic-btn gen-btn'>Get in touch</button></Link>
             </div>
           </div>
         </div>

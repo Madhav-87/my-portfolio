@@ -13,7 +13,7 @@
   .header-div {
     height: auto;
     flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 10px 0 !important;
   }
 
   .header-box-20 {
@@ -30,7 +30,7 @@
   /* Intro panel */
   .intro-panel {
     height: auto;
-    padding: 60px 20px;
+    padding: 60px 0px;
     gap: 30px;
     width:100%;
     background: linear-gradient(135deg,
@@ -90,7 +90,7 @@
 
   /* Section headings section */
   .about-me-section {
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
 }
 
@@ -105,7 +105,7 @@
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 16px;
+    padding: 10px 0px;
     gap: 8px;
   }
   .header-box-20 {
@@ -134,7 +134,7 @@
   .intro-panel {
     height: auto;
     flex-direction: column-reverse;
-    padding: 40px 16px 30px;
+    padding: 40px 0px 30px;
     gap: 24px;
     background: linear-gradient(135deg,
       #f5f7ff 0%,
@@ -144,13 +144,13 @@
   
 
   .intro-info-section {
-    width: 100%;
+    width: 95%;
     align-items: flex-start;
     padding-right: 0;
   }
 
   .image-container {
-    width: 100%;
+    width: 95%;
     height: 220px;
     animation: none; /* optional: disable on mobile for perf */
   }
@@ -196,7 +196,7 @@
   /* ── About / Skills / Sections ── */
   .about-me-section {
     min-height: auto;
-    padding: 40px 16px;
+    padding: 40px 0px;
     gap: 24px;
   }
 
@@ -208,7 +208,7 @@
   }
 
   .about-Container {
-    width: 90%;
+    width: 80%;
     max-width: 360px;
     height: auto;
     min-height: 120px;
@@ -253,7 +253,7 @@
 
   /* ── CTA / Communication Box ── */
   .communication-container {
-    width: 90%;
+    width: 85%;
     height: auto;
     padding: 24px 16px;
   }
@@ -261,7 +261,7 @@
   /* ── Footer ── */
   .footer-container {
     height: auto;
-    padding: 20px 16px;
+    padding: 20px 0px;
     text-align: center;
   }
 }

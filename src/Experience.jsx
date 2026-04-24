@@ -10,7 +10,7 @@ export default function Experience() {
                 <div className='flex flex-center flex-col project-container gap-40'>
                     <div className='flex flex-center flex-col gap-10'>
                         <div className='color-blue'>JOURNEY</div>
-                        <div className='heading-4'>Project-Based Experience & Education</div>
+                        <div className='heading-4 text-center'>Project-Based Experience & Education</div>
                         <div className='subtxt'>Where I've worked and studied.</div>
                     </div>
                     <div className='h-5'>

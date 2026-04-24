@@ -45,6 +45,9 @@
 .color-blue{
     color:blue;
 }
+.color-blue-hover:hover{
+    color:blue;
+}
 .text-center{
     text-align: center;
 }

@@ -15,20 +15,10 @@ export default function Header({activeEle}) {
                     <div><h3>Madhav</h3></div>
                 </div>
                 <div className='header-box-50'>
-                    <Link className={`nav-items ${active==="Home" ? 'active-item' : ""}`} to="/">Home</Link>
-                    <Link className={`nav-items ${active==="Projects" ? 'active-item' : ""}`} to="/projects">Projects</Link>
-                    <Link className={`nav-items ${active==="Experience" ? 'active-item' : ""}`} to="/experience">Experience</Link>
-                    <Link className={`nav-items ${active==="Contact" ? 'active-item' : ""}`} to="/contact">Contact</Link>
-                </div>
-                <div className='header-box-20'>
-                    <div className='download-resume-btn magic-btn'>
-                        <span className="material-symbols-outlined">
-                            download
-                        </span>
-                        <span className=''>
-                            Resume
-                        </span>
-                    </div>
+                    <Link className={`nav-items color-blue-hover ${active==="Home" ? 'active-item' : ""}`} to="/">Home</Link>
+                    <Link className={`nav-items color-blue-hover ${active==="Projects" ? 'active-item' : ""}`} to="/projects">Projects</Link>
+                    <Link className={`nav-items color-blue-hover ${active==="Experience" ? 'active-item' : ""}`} to="/experience">Experience</Link>
+                    <Link className={`nav-items color-blue-hover ${active==="Contact" ? 'active-item' : ""}`} to="/contact">Contact</Link>
                 </div>
             </div>
         </header>
