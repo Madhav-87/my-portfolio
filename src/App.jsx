@@ -1,9 +1,9 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './Home';
-import Project from './Project';
-import Contact from './Contact';
-import Experience from './Experience';
+import Home from './pages/Home/Home';
+import Project from './pages/Project/Project';
+import Contact from './pages/Contact/Contact';
+import Experience from './pages/Experience/Experience';
 export default function App() {
   return (
     <Router>

@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from './Header.jsx';
+import Header from '../../Components/Header.jsx';
 import './Project.css';
-import Footer from './Footer.jsx';
+import Footer from '../../Components/Footer.jsx';
 
 export default function Project() {
     return (

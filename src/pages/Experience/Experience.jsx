@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../../Components/Header'
 import './Experience.css';
-import Footer from './Footer';
+import Footer from '../../Components/Footer';
 export default function Experience() {
   return (
     <div>

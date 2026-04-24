@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import './App.css'
-import './utility.css';
+import './Home.css'
+import '../../utility.css';
 import './responsive.css';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import { Link } from 'react-router-dom';
+import Header from '../../Components/Header.jsx';
+import Footer from '../../Components/Footer.jsx';
+import { Link, useNavigate } from 'react-router-dom';
 function Home() {
   const [count, setCount] = useState(0)
-
+  const navigate=useNavigate();
   return (
     <>
     <Header activeEle={"Home"}/>
@@ -37,7 +37,7 @@ function Home() {
             <div className="socio-media-label-sec">
               <div className="fa-brands fa-github cursor-pointer color-blue-hover" onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_URL}`,"_blank")}}></div>
               <div className="fa-brands fa-linkedin cursor-pointer color-blue-hover" onClick={()=>{window.open(`${import.meta.env.VITE_LINKEDIN_URL}`,"_blank")}}></div>
-              <div className="fa-regular fa-envelope cursor-pointer color-blue-hover"></div>
+              <div className="fa-regular fa-envelope cursor-pointer color-blue-hover" onClick={()=>{navigate('/contact')}}></div>
               <div className="d-flex gap-5"><span className="material-symbols-outlined">explore_nearby</span> <span className="subtxt">Nanded, India</span></div>
             </div>
           </div>

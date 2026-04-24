@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
-import Header from './Header'
+import Header from '../../Components/Header'
 import './Contact.css';
-import Footer from './Footer';
+import Footer from '../../Components/Footer';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 export default function Contact() {
