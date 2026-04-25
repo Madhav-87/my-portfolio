@@ -43,20 +43,20 @@ export default function Contact() {
                             <div className='flex gap-20'>
                                 <div className='flex width-50 flex-col gap-5'>
                                     <label>Name</label>
-                                    <input type="text" placeholder='Your name' name="name"></input>
+                                    <input type="text" placeholder='Your name' name="name" required></input>
                                 </div>
                                 <div className='flex width-50 flex-col gap-5'>
                                     <label>Email</label>
-                                    <input type="email" placeholder='you@company.com' name="email"></input>
+                                    <input type="email" placeholder='you@company.com' name="email" required></input>
                                 </div>
                             </div>
                             <div className='flex width-100 flex-col gap-5'>
                                 <label>Subject</label>
-                                <input type="text" placeholder={`What's this about?`} name="title"></input>
+                                <input type="text" placeholder={`What's this about?`} name="title" required></input>
                             </div>
                             <div className='flex width-100 flex-col gap-5'>
                                 <label>Message</label>
-                                <textarea placeholder='Tell me about the role or project..' name="message" />
+                                <textarea placeholder='Tell me about the role or project..' name="message" required/>
                             </div>
                             <button className='flex flex-center gap-10 magic-btn gen-btn width-50'>
                                 {

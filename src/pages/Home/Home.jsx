@@ -33,7 +33,7 @@ function Home() {
             </div>
             <div className="btn-section">
               <div><Link to="/projects"><button className="magic-btn">View my work</button></Link></div>
-              <div><button>Download CV</button></div>
+              <div><a href='./Madhav_Bondhare_CV.pdf' download="Madhav_Bondhare_cv"><button>Download CV</button></a></div>
             </div>
             <div className="socio-media-label-sec">
               <div className="fa-brands fa-github cursor-pointer color-blue-hover" onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_URL}`,"_blank")}}></div>
@@ -70,15 +70,6 @@ function Home() {
               </div>
               <div className="box-title">What i do</div>
               <div className="subtxt">Build full-stack web apps with JavaScript, Bootstrap, React & Node.</div>
-            </div>
-            <div className="about-Container gap-20-column cursor-pointer">
-              <div className="icon-badge magic-btn">
-                <span className="material-symbols-outlined">
-                  school
-                </span>
-              </div>
-              <div className="box-title">Education</div>
-              <div className="subtxt">B.C.A CS at MGM - CGPA 9.42</div>
             </div>
           </div>
         </div>
@@ -118,6 +109,15 @@ function Home() {
                 <ul>
                   <li>SQL</li>
                   <li>MYSQL</li>
+                </ul>
+              </div>
+            </div>
+            <div className="about-Container gap-20-column cursor-pointer">
+              <div className="box-title color-blue">Tools</div>
+              <div className='list-item'>
+                <ul>
+                  <li>Git</li>
+                  <li>Git Hub</li>
                 </ul>
               </div>
             </div>
