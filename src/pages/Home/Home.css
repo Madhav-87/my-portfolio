@@ -162,7 +162,9 @@ body {
   transition: 0.3s ease;
   animation: bubble 4s ease infinite;
 }
-
+.image-container img{
+  border-radius: 20px;
+}
 .intro-info-section {
   height: 100%;
   width: 40%;

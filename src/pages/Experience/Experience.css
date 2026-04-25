@@ -56,10 +56,8 @@
 /* Extra-small phones — up to 360px */
 @media (max-width: 360px) {
     .ex-box-container {
-        width: 100%;
-        border-radius: 0;
-        border-left: none;
-        border-right: none;
+        width:85%;
+        border-radius: 12px;
         padding: 12px;
         font-size: 14px;
     }

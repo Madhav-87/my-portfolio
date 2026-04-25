@@ -5,6 +5,7 @@ import './responsive.css';
 import Header from '../../Components/Header.jsx';
 import Footer from '../../Components/Footer.jsx';
 import { Link, useNavigate } from 'react-router-dom';
+import growthTrackerImg from '../../assets/growth-tracker-img.png';
 function Home() {
   const [count, setCount] = useState(0)
   const navigate=useNavigate();
@@ -41,7 +42,9 @@ function Home() {
               <div className="d-flex gap-5"><span className="material-symbols-outlined">explore_nearby</span> <span className="subtxt">Nanded, India</span></div>
             </div>
           </div>
-          <div className="image-container"></div>
+          <div className="image-container">
+            <img src={"./portfolio-icon.png"} height={"100%"}/>
+          </div>
         </div>
         <div className="about-me-section">
           <div className="gap-10-column text-center">
@@ -128,7 +131,10 @@ function Home() {
           </div>
           <div className="project-show-panel">
             <div className='project-img-section'>
-              <div className='image-container' style={{ width: "100%" }}></div>
+              <div className='image-container' style={{ width: "100%" }}>
+                <img src={growthTrackerImg} width="100%"/>
+              </div>
+              
             </div>
             <div className='project-desc'>
               <div className="label-tag">
