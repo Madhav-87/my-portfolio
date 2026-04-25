@@ -120,7 +120,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="about-me-section">
+        <div className="about-me-section padding-top-bottom-35">
           <div className="gap-10-column text-center d-flex" >
             <div className="color-blue fw-5">FEATURED WORK</div>
             <div className="heading-4">Most recent project</div>
