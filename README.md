@@ -6,13 +6,13 @@ A personal developer portfolio built with **React + Vite**, showcasing projects,
 
 ## 🚀 Live Demo
 
-> _Add your deployed link here (e.g., Vercel / Netlify URL)_
+> https://madhavbondhare.vercel.app/
 
 ---
 
 ## 📸 Preview
 
-> _Add a screenshot or screen recording of your portfolio here_
+> <img width="1897" height="903" alt="portfolio-dashboard" src="https://github.com/user-attachments/assets/4f949b30-8454-4cb2-8057-fe6f9b6fd9ed" />
 
 ---
 
