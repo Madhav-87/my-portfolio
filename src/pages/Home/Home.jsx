@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import './Home.css'
-import { Document, Page, pdfjs } from 'react-pdf';
 import '../../utility.css';
 import './responsive.css';
 import Header from '../../Components/Header.jsx';
@@ -11,7 +10,6 @@ import growthTrackerImg from '../../assets/growth-tracker-img.png';
 import javascriptcert from '/JavaScript-Cert.pdf';
 import gitHubCert from '/Google Git and GitHub Certificate.pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc=`//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 
 function Home() {
   const [count, setCount] = useState(0)
