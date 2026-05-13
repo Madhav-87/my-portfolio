@@ -10,12 +10,12 @@ export default function Project() {
             <main className='mainProject'>
                 <div className='flex flex-center flex-col project-container gap-40'>
                     <div className='flex flex-center flex-col gap-10'>
-                        <div className='color-blue'>PROJECTS</div>
+                        <div className='flex flex-center gap-10 color-blue'><i class="fa-solid fa-briefcase" style={{color:"black"}}></i> PROJECTS</div>
                         <div className='heading-4'>Selected Work</div>
                         <div className='subtxt text-center'>A handful of projects I'm proud of - built with care for users and code quality.</div>
                     </div>
                     <div className='flex flex-center flex-wrap height-100 width-100 gap-40'>
-                        <div className='flex flex-col project-box gap-20'>
+                        <div tabIndex={5} className='hover-lift flex flex-col project-box gap-20'>
                             <div className='flex flex-center projectbox-img-container'>
                                 <img src="./growth-tracker-icon.png" height="80%"/>
                             </div>
@@ -31,13 +31,13 @@ export default function Project() {
                                 </ul>
                             </div>
                             <div>
-                                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL}`,"_blank")}}>
+                                <button tabIndex={6} className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL}`,"_blank")}}>
                                     <span class="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>
                             </div>
                         </div>
-                        <div className='flex flex-col project-box gap-15 '>
+                        <div tabIndex={7} className='hover-lift flex flex-col project-box gap-15 '>
                             <div className='flex flex-center projectbox-img-container'>
                                 <img src="./study-ai.png" height="80%"/>
                             </div>
@@ -51,13 +51,13 @@ export default function Project() {
                                 </ul>
                             </div>
                             <div>
-                                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL}`,"_blank")}}>
+                                <button tabIndex={8} className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL}`,"_blank")}}>
                                     <span class="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>
                             </div>
                         </div>
-                        <div className='flex flex-col project-box gap-15'>
+                        <div tabIndex={9} className='hover-lift flex flex-col project-box gap-15'>
                             <div className='flex flex-center projectbox-img-container'>
                                 <img src="./portfolio-icon.png" height="80%"/>
                             </div>
@@ -73,7 +73,7 @@ export default function Project() {
                                 </ul>
                             </div>
                             <div>
-                                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_PORTFOLIO_URL}`,"_blank")}}>
+                                <button tabIndex={10} className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_PORTFOLIO_URL}`,"_blank")}}>
                                     <span class="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>

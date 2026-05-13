@@ -51,13 +51,21 @@ body {
   font-weight: 500;
 }
 
+header{
+    position: sticky !important;
+    top:0;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
 .header-div {
+
   height: 65px;
   width: 100%;
   display: flex;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.09);
-
 }
 
 .header-box-20 {
@@ -141,6 +149,8 @@ body {
 }
 
 .image-container {
+  animation: scale-in 0.5s ease-in-out,
+  bubble 3s ease infinite 0.5s;
   height: 350px;
   /* adjust 320–400px as needed */
   width: 40%;
@@ -158,12 +168,11 @@ body {
     0 10px 25px rgba(0, 0, 0, 0.05),
     0 4px 10px rgba(0, 0, 0, 0.03);
 
-  /* optional smooth look */
-  transition: 0.3s ease;
-  animation: bubble 4s ease infinite;
+  /* optional smooth look */  
 }
 .image-container img{
   border-radius: 20px;
+  animation: scale-in 2s ease-in-out;
 }
 .intro-info-section {
   height: 100%;
@@ -173,6 +182,9 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-right: 10px;
+}
+.animation-fade-in-up{
+  animation: fade-in-up 0.6s both;
 }
 
 .label-tag {
@@ -405,8 +417,19 @@ body {
   padding: 10px;
   border-radius: 12px;
   border: 1px solid grey;
+  transition: all 0.1s ease;
+  cursor: pointer;
 }
-
+.cert-container.long {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 60vw;
+  background: white;
+  z-index: 1000;
+}
 .cert-icon {
   width: 20%;
   height: 100%;
@@ -465,7 +488,6 @@ body {
   background: #f8fafc;
 
 }
-
 @keyframes bubble {
   0% {
     transform: translateY(0px);
@@ -478,4 +500,21 @@ body {
   100% {
     transform: translateY(0px);
   }
+}
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.90); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.hover-lift {
+  transition: transform 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -12px rgba(30, 27, 75, 0.18);
 }
