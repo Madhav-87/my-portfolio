@@ -53,14 +53,13 @@ body {
 
 header{
     position: sticky !important;
-    top:0;
+    top:0 !important;
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
     z-index: 100;
 }
 
 .header-div {
-
   height: 65px;
   width: 100%;
   display: flex;
@@ -69,12 +68,14 @@ header{
 }
 
 .header-box-20 {
+  position: sticky;
   width: 20%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transition: all 1s ease;
 }
 
 .header-box-20 span {
@@ -517,4 +518,28 @@ header{
 .hover-lift:hover {
   transform: translateY(-4px);
   box-shadow: 0 24px 48px -12px rgba(30, 27, 75, 0.18);
+}
+.three-dots-icon{
+  position: fixed;
+  right: 30px;
+}
+.mobile-slider{
+  display: fixed;
+  transform: translateY(-20px);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -100;
+  
+}
+.slide-open{
+  display: flex;
+  transform: translateY(-3px);
+  visibility:visible;
+  opacity: 1;
+  z-index: 1;
+  margin-bottom: 10px;
+
+}
+.slide-close{
+ height: 0px !important;
 }
