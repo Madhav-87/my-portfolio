@@ -57,6 +57,7 @@ header{
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
     z-index: 100;
+    transition: all 0.5 ease;
 }
 
 .header-div {
@@ -75,7 +76,7 @@ header{
   justify-content: center;
   align-items: center;
   gap: 10px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .header-box-20 span {
@@ -529,9 +530,11 @@ header{
   visibility: hidden;
   opacity: 0;
   z-index: -100;
-  
+  transition: all 0.5s ease;
+  height: 0px !important;
 }
 .slide-open{
+  height: 40px !important;
   display: flex;
   transform: translateY(-3px);
   visibility:visible;
@@ -539,7 +542,4 @@ header{
   z-index: 1;
   margin-bottom: 10px;
 
-}
-.slide-close{
- height: 0px !important;
 }

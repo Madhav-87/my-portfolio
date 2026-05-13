@@ -24,7 +24,7 @@ export default function Header({ activeEle }) {
                     </div>
                 </div>
 
-                <div className={`${mobile? `mobile-slider ${sliderOpen? 'slide-open': 'slide-close'}`: '' } header-box-50`}>
+                <div className={`${mobile? `mobile-slider ${sliderOpen? 'slide-open': ' '}`: '' } header-box-50`}>
                     <Link tabindex="1" className={`nav-items color-blue-hover ${active === "Home" ? 'active-item' : ""}`} to="/">Home</Link>
                     <Link tabindex="2" className={`nav-items color-blue-hover ${active === "Projects" ? 'active-item' : ""}`} to="/projects">Projects</Link>
                     <Link tabindex="3" className={`nav-items color-blue-hover ${active === "Experience" ? 'active-item' : ""}`} to="/experience">Experience</Link>
