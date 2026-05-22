@@ -10,7 +10,7 @@ export default function Project() {
             <main className='mainProject'>
                 <div className='flex flex-center flex-col project-container gap-40'>
                     <div className='flex flex-center flex-col gap-10'>
-                        <div className='flex flex-center gap-10 color-blue'><i class="fa-solid fa-briefcase" style={{color:"black"}}></i> PROJECTS</div>
+                        <div className='flex flex-center gap-10 color-blue'><i className="fa-solid fa-briefcase" style={{color:"black"}}></i> PROJECTS</div>
                         <div className='heading-4'>Selected Work</div>
                         <div className='subtxt text-center'>A handful of projects I'm proud of - built with care for users and code quality.</div>
                     </div>
@@ -32,7 +32,7 @@ export default function Project() {
                             </div>
                             <div>
                                 <button tabIndex={6} className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL}`,"_blank")}}>
-                                    <span class="fa-brands fa-github cursor-pointer"></span>
+                                    <span className="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>
                             </div>
@@ -52,7 +52,7 @@ export default function Project() {
                             </div>
                             <div>
                                 <button tabIndex={8} className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL}`,"_blank")}}>
-                                    <span class="fa-brands fa-github cursor-pointer"></span>
+                                    <span className="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>
                             </div>
@@ -74,7 +74,7 @@ export default function Project() {
                             </div>
                             <div>
                                 <button tabIndex={10} className='magic-btn gen-btn flex flex-center gap-10' onClick={()=>{window.open(`${import.meta.env.VITE_GITHUB_PORTFOLIO_URL}`,"_blank")}}>
-                                    <span class="fa-brands fa-github cursor-pointer"></span>
+                                    <span className="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>
                             </div>

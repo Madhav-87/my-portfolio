@@ -9,12 +9,12 @@ export default function Experience() {
             <main className='mainProject'>
                 <div className='flex flex-center flex-col project-container gap-40'>
                     <div className='flex flex-center flex-col gap-10'>
-                        <div className='flex flex-center gap-10 color-blue'><i class="fa-solid fa-road" style={{color:"black"}}></i> JOURNEY</div>
+                        <div className='flex flex-center gap-10 color-blue'><i className="fa-solid fa-road" style={{color:"black"}}></i> JOURNEY</div>
                         <div className='heading-4 text-center'>Project-Based Experience & Education</div>
                         <div className='subtxt'>Where I've worked and studied.</div>
                     </div>
                     <div className='flex flex-center gap-10 h-5'>
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                             business_center
                         </span> <span>Project-Based Experience</span>
                     </div>

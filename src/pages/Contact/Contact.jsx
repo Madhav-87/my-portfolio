@@ -35,7 +35,7 @@ export default function Contact() {
             <main className='mainProject'>
                 <div className='flex flex-center flex-col project-container gap-40'>
                     <div className='flex flex-center flex-col gap-10'>
-                        <div className='color-blue flex flex-center gap-10'><i class="fa-solid fa-user" style={{color:"black"}}></i> CONTACT</div>
+                        <div className='color-blue flex flex-center gap-10'><i className="fa-solid fa-user" style={{color:"black"}}></i> CONTACT</div>
                         <div className='heading-4'>Let's Connect</div>
                         <div className='subtxt text-center'>Have a role, project, or just a hello? I'd love to hear from you.</div>
                     </div>
@@ -67,7 +67,7 @@ export default function Contact() {
                                     loading
                                         ?
                                     (
-                                        <span class="fas fa-spinner"></span>
+                                        <span className="fas fa-spinner"></span>
                                     )
                                     :
                                     messageSent
@@ -82,7 +82,7 @@ export default function Contact() {
                                     (   
                                     <>
                                     <span>Send Message</span>
-                                    <span class="material-symbols-outlined tilt">
+                                    <span className="material-symbols-outlined tilt">
                                         send
                                     </span>
                                     </>
