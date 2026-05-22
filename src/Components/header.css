@@ -1,13 +1,19 @@
 .lines{
-    display: block;
+    display: none;
     width:20px;
     height: 1px;
     background: black;
     transition: all 0.5s ease;
 }
+
 .cross-1{
     transform:translateY(5px) rotate(60deg);
 }
 .cross-2{
     transform: translateY(-5px) rotate(-60deg);
+}
+@media (max-width:600px){
+    .lines{
+        display: block;
+    }
 }
