@@ -43,7 +43,7 @@ function Home() {
             </div>
             <div className="btn-section animation-fade-in-up delay-200">
               <div><Link to="/projects"><button tabIndex={5} className="magic-btn">View my work</button></Link></div>
-              <div><a href='./Madhav_Bondhare_CV.pdf' download="Madhav_Bondhare_cv"><button tabIndex={6}>Download CV</button></a></div>
+              <div><a href='./cv.pdf' download="madhav_bondhare_cv"><button tabIndex={6}>Download CV</button></a></div>
             </div>
             <div className="socio-media-label-sec animation-fade-in-up delay-200">
               <div tabIndex="7" className="fa-brands fa-github cursor-pointer color-blue-hover" onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_URL}`, "_blank") }}></div>
