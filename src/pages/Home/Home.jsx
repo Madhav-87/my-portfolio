@@ -162,10 +162,14 @@ function Home() {
                   <li>MYSQL</li>
                 </ul>
               </div>
-              <div>
+              <div className='flex gap-20'>
                 <button tabIndex="20" className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL}`, "_blank") }}>
                   <span className="fa-brands fa-github cursor-pointer"></span>
                   <span>Code</span>
+                </button>
+                <button tabIndex="20" className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GROWTH_TRACKER_LINK}`, "_blank") }}>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
                 </button>
               </div>
             </div>
