@@ -24,7 +24,7 @@
     position: relative;
     animation: lineAppear 1s ease forwards;
     transform-origin: top;
-    transform: scaleY(0);
+    transform: translateY(-120px) !important;
 }
 
 .point {
@@ -122,9 +122,13 @@
     .timeline{
         height: 570px;
     }
+    .point:nth-child(2) {
+        position: absolute;
+        top: 320px;
+    }
     .point:nth-child(3) {
         position: absolute;
-        top: 450px;
+        top: 510px;
     }
     .ex-project-container{
         min-height: auto !important;
@@ -144,6 +148,14 @@
     }
     .ex-main-txt{
         font-size: 21px;
+    }
+    .point:nth-child(2) {
+        position: absolute;
+        top: 320px;
+    }
+    .point:nth-child(3) {
+        position: absolute;
+        top: 510px;
     }
     .ex-project-container .project-container{
         min-height: auto !important;
