@@ -119,6 +119,7 @@ function Home() {
                 <ul>
                   <li>SQL</li>
                   <li>MYSQL</li>
+                  <li>MongoDB</li>
                 </ul>
               </div>
             </div>
