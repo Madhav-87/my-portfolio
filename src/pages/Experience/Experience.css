@@ -1,18 +1,7 @@
-.ex-box-container{
-    min-height:100px;
+.ex-box-container {
+    min-height: 100px;
     height: auto;
-    width:60%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    padding: 20px;
-    font-size: 18px;
-    background: white;
-    justify-content: center;
-}
-.ex-box-container{
-    min-height:100px;
-    height: auto;
-    width:60%;
+    width: 100% !important;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     padding: 20px;
@@ -21,22 +10,80 @@
     justify-content: center;
 }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE — tablet (≤768px) & mobile (≤480px)
-   No existing rules were modified.
-───────────────────────────────────────── */
+.ex-project-container {
+    width: 80%;
+    padding-right: 0px;
+}
+
+.timeline {
+    height: 480px;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: lineAppear 1s ease forwards;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.point {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #5d6df5;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+}
+
+.point::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    animation: ripple 1s ease infinite;
+    border: 1px solid #5d6df5;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes lineAppear {
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.point:nth-child(2) {
+    position: absolute;
+    top: 200px;
+}
+
+.point:nth-child(3) {
+    position: absolute;
+    top: 400px;
+}
 
 /* Large tablet — up to 1024px */
 @media (max-width: 1024px) {
     .ex-box-container {
-        width: 80%;
+        width: 80% !important;
     }
 }
 
 /* Tablet — up to 768px */
 @media (max-width: 768px) {
     .ex-box-container {
-        width: 90%;
+        width: 97% !important;
         padding: 16px;
         font-size: 16px;
         border-radius: 10px;
@@ -46,19 +93,30 @@
 /* Mobile — up to 480px */
 @media (max-width: 480px) {
     .ex-box-container {
-        width: 90%;
+        width: 97% !important;
         padding: 14px;
         font-size: 15px;
         border-radius: 8px;
+    }
+
+    .point:nth-child(3) {
+        position: absolute;
+        top: 450px;
     }
 }
 
 /* Extra-small phones — up to 360px */
 @media (max-width: 360px) {
     .ex-box-container {
-        width:85%;
+        width: 97% !important;
         border-radius: 12px;
         padding: 12px;
         font-size: 14px;
+    }
+    .heading-4{
+        font-size: 24px;
+    }
+    .ex-main-txt{
+        font-size: 21px;
     }
 }

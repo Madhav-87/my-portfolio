@@ -6,7 +6,13 @@ body {
   margin: 0px;
   overflow-x: hidden;
 }
-
+.blue-gradient{
+   background: linear-gradient(90deg,
+      #3c6ff5 0%,
+      #8685ff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 .d-flex {
   display: flex;
   align-items: center;

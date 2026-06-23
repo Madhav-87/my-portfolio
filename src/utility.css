@@ -11,7 +11,9 @@
 .flex-wrap{
     flex-wrap: wrap;
 }
-
+.justify-self-center{
+    justify-self: center;
+}
 .justify-self-left{
     justify-self: flex-start !important;
 }
@@ -75,3 +77,4 @@
 button{
     cursor: pointer;
 }
+.mr-10{}

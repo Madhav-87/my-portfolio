@@ -33,7 +33,7 @@ function Home() {
             <div className="intro-info-content">
               <p>
                 <span className="heading-3">
-                  Hi, I'm Madhav Full-Stack Developer.
+                  Hi, I'm <span className='blue-gradient'>Madhav</span> Full-Stack Developer.
                 </span>
                 <span className="animation-fade-in-up delay-100" style={{ lineHeight: "30px" }}>
                   Hey, I'm Madhav  — a BCA grad who loves crafting useful, innovative web apps from the ground up.
