@@ -7,14 +7,8 @@ export default function Experience() {
         <div>
             <Header activeEle={"Experience"} />
             <main className='mainProject'>
-                <div className='flex flex-center gap-5'>
-                    <div className='timeline'>
-                        <div className='point'></div>
-                        <div className='point'></div>
-                        <div className='point'></div>
-                    </div>
-                    <div className='flex flex-center flex-col project-container ex-project-container  gap-40'>
-                        <div className='flex flex-center flex-col gap-10'>
+                <div>
+                    <div className='flex flex-center flex-col gap-10 ex-main-title-section'>
                             <div className='flex flex-center gap-10 color-blue'><i className="fa-solid fa-road" style={{ color: "black" }}></i> JOURNEY</div>
                             <div className='heading-4 text-center'>Project-Based Experience & Education</div>
                             <div className='subtxt'>Where I've worked and studied.</div>
@@ -27,6 +21,14 @@ export default function Experience() {
                                 Project-Based Experience
                             </span>
                         </div>
+                </div>
+                <div className='flex flex-center gap-5'>
+                    <div className='timeline'>
+                        <div className='point'></div>
+                        <div className='point'></div>
+                        <div className='point'></div>
+                    </div>
+                    <div className='flex flex-center flex-col project-container ex-project-container  gap-40'>
                         <div tabIndex={5} className= 'mr-10 hover-lift flex flex-col gap-10 ex-box-container'>
                             <div className='h-6'>Growth Tracker</div>
                             <div className='subtxt'>Growth Tracker is a personal development web application designed to help users set meaningful goals, track daily progress, and build long-term habits. It provides structured planning, performance analytics, and visual reports to improve consistency and productivity. The platform focuses on transforming small daily actions into measurable growth over time.</div>
