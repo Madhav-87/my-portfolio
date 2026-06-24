@@ -1,0 +1,66 @@
+# Madhav Bondhare | Full Stack Development
+
+Welcome to my portfolio website.
+
+I'm Madhav Bondhare, a Full-Stack Developer and final-year BCA student passionate about building modern web applications and continuously improving my development skills through real-world projects.
+
+This website serves as a central place to explore my projects, technical experience, skills, and ways to connect with me.
+
+## Navigation
+
+* [Home](https://madhavbondhare.vercel.app/)
+* [Projects](https://madhavbondhare.vercel.app/projects)
+* [Experience](https://madhavbondhare.vercel.app/experience)
+* [Contact](https://madhavbondhare.vercel.app/contact)
+
+## About Me
+
+I enjoy turning ideas into functional and user-friendly applications. Most of my work focuses on full-stack web development using JavaScript, React.js, Node.js, Express.js, and MySQL.
+
+I like building projects that solve real problems, help me learn new technologies, and improve my understanding of software development.
+
+## Projects
+
+### Growth Tracker
+
+A goal and productivity tracking application that helps users manage daily, monthly, and yearly goals while monitoring progress through visual reports and analytics.
+
+Project:
+
+* https://growthtracker.vercel.app/
+
+### IntelliStudy
+
+An AI-powered study planner that helps students organize their learning schedule based on syllabus requirements and exam timelines.
+
+Project:
+
+* https://intellistudy-app.vercel.app/
+
+## Experience
+
+Details about my internship experience, technical work, and development journey can be found here:
+
+* https://madhavbondhare.vercel.app/experience
+
+## Contact
+
+If you'd like to discuss opportunities, projects, internships, collaborations, or simply connect, feel free to reach out through the contact page.
+
+The contact form on this website is powered by EmailJS.
+
+* https://madhavbondhare.vercel.app/contact
+
+## Profiles
+
+LinkedIn:
+
+* https://www.linkedin.com/in/madhav-bondhare/
+
+GitHub:
+
+* https://github.com/Madhav-87
+
+## Website
+
+* https://madhavbondhare.vercel.app/
