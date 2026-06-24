@@ -27,7 +27,7 @@ function Home() {
         <div className="intro-panel">
           <div className="animation-fade-in-up intro-info-section">
             <div className="label-tag">
-              <i className="fa-solid fa-circle bg-green" style={{ color: "limegreen" }}></i>
+              <span className="ripple-point"></span>
               <span>Available for opportunities</span>
             </div>
             <div className="intro-info-content">

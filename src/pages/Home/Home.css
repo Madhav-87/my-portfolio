@@ -6,6 +6,27 @@ body {
   margin: 0px;
   overflow-x: hidden;
 }
+.ripple-point{
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background: #42c271;
+  position: relative;
+  border:1px solid #42c271;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.ripple-point::before{
+  border: 1px solid #42c271;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width:100%;
+  inset: 0;
+  box-sizing: border-box;
+  animation: ripple-point 2s ease infinite;
+}
 .blue-gradient{
    background: linear-gradient(90deg,
       #3c6ff5 0%,
@@ -495,6 +516,16 @@ header{
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   background: #f8fafc;
 
+}
+@keyframes ripple-point{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }
 @keyframes bubble {
   0% {
