@@ -18,13 +18,22 @@ export default function Header({ activeEle }) {
                         M
                     </div>
                     <div><h3>Madhav Bondhare</h3></div>
-                    <div tabIndex={0} role="button" onClick={()=>{setSliderOpen(prev=>!prev)}} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSliderOpen(prev=>!prev); } }} className={`${mobile ? 'flex flex-col gap-10 three-dots-icon' : ''}`}>
+                    <div
+                        tabIndex={0}
+                        role="button"
+                        aria-label={sliderOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                        aria-expanded={sliderOpen}
+                        aria-controls="main-navigation"
+                        onClick={()=>{setSliderOpen(prev=>!prev)}}
+                        onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSliderOpen(prev=>!prev); } }}
+                        className={`${mobile ? 'flex flex-col gap-10 three-dots-icon' : ''}`}
+                    >
                         <span className={`${sliderOpen? 'lines cross-1': 'lines'}`}></span>
                         <span className={`${sliderOpen? 'lines cross-2': 'lines'}`}></span>
                     </div>
                 </div>
 
-                <div className={`${mobile? `mobile-slider ${sliderOpen? 'slide-open': ' '}`: '' } header-box-50`}>
+                <div id="main-navigation" className={`${mobile? `mobile-slider ${sliderOpen? 'slide-open': ' '}`: '' } header-box-50`}>
                     <Link className={`nav-items color-blue-hover ${active === "Home" ? 'active-item' : ""}`} to="/">Home</Link>
                     <Link className={`nav-items color-blue-hover ${active === "Projects" ? 'active-item' : ""}`} to="/projects">Projects</Link>
                     <Link className={`nav-items color-blue-hover ${active === "Experience" ? 'active-item' : ""}`} to="/experience">Experience</Link>

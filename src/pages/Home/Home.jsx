@@ -54,14 +54,14 @@ function Home() {
               <div><a href='./cv.pdf' download="madhav_bondhare_cv"><button>Download CV</button></a></div>
             </div>
             <div className="socio-media-label-sec animation-fade-in-up delay-200">
-              <div tabIndex={0} role="button" className="fa-brands fa-github cursor-pointer color-blue-hover" onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_URL}`, "_blank") }} onKeyDown={(event) =>handleInteractiveKeyDown (event, () => window.open(`${import.meta.env.VITE_GITHUB_URL}`, "_blank"))}></div>
-              <div tabIndex={0} role="button" className="fa-brands fa-linkedin cursor-pointer color-blue-hover" onClick={() => { window.open(`${import.meta.env.VITE_LINKEDIN_URL}`, "_blank") }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(`${import.meta.env.VITE_LINKEDIN_URL}`, "_blank"))}></div>
-              <div tabIndex={0} role="button" className="fa-regular fa-envelope cursor-pointer color-blue-hover" onClick={() => { navigate('/contact') }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => navigate('/contact'))}></div>
+              <div tabIndex={0} role="button" aria-label="Visit GitHub profile" className="fa-brands fa-github cursor-pointer color-blue-hover" onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_URL}`, "_blank") }} onKeyDown={(event) =>handleInteractiveKeyDown (event, () => window.open(`${import.meta.env.VITE_GITHUB_URL}`, "_blank"))}></div>
+              <div tabIndex={0} role="button" aria-label="Visit LinkedIn profile" className="fa-brands fa-linkedin cursor-pointer color-blue-hover" onClick={() => { window.open(`${import.meta.env.VITE_LINKEDIN_URL}`, "_blank") }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(`${import.meta.env.VITE_LINKEDIN_URL}`, "_blank"))}></div>
+              <div tabIndex={0} role="button" aria-label="Go to contact page" className="fa-regular fa-envelope cursor-pointer color-blue-hover" onClick={() => { navigate('/contact') }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => navigate('/contact'))}></div>
               <div className="d-flex gap-5"><span className="material-symbols-outlined">explore_nearby</span> <span className="subtxt">Nanded, India</span></div>
             </div>
           </div>
           <div className="image-container delay-200">
-            <img src={"./portfolio-icon.png"} height={"100%"} />
+            <img src={"./portfolio-icon.png"} alt="site icon" height={"100%"} />
           </div>
         </div>
         <div className="animation-fade-in-up about-me-section">
@@ -151,7 +151,7 @@ function Home() {
           <div className="project-show-panel">
             <div className='project-img-section'>
               <div className='image-container' style={{ width: "100%" }}>
-                <img src={growthTrackerImg} width="100%" />
+                <img src={growthTrackerImg} alt="growth tracker dashboard image" width="100%" />
               </div>
 
             </div>
@@ -191,7 +191,7 @@ function Home() {
             <div className="color-grey">Recent credentials.</div>
           </div>
           <div className="d-flex gap-25">
-            <div tabIndex={0} role="button" onClick={()=>{setViewCert(true);setpdfContainer(javascriptcert);setViewCert(true)}} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setViewCert(true); setpdfContainer(javascriptcert); setViewCert(true); })} className='hover-lift cert-container'>
+            <div tabIndex={0} role="button" aria-label="Open JavaScript certificate" onClick={()=>{setViewCert(true);setpdfContainer(javascriptcert);setViewCert(true)}} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setViewCert(true); setpdfContainer(javascriptcert); setViewCert(true); })} className='hover-lift cert-container'>
               <div className='cert-icon'>
                 <span className="material-symbols-outlined">
                   license
@@ -202,7 +202,7 @@ function Home() {
                 <div className='cert-subtxt'>Infosys Springboard</div>
               </div>
             </div>
-            <div tabIndex={0} role="button" onClick={()=>{setpdfContainer(gitHubCert);setViewCert(true)}} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(gitHubCert); setViewCert(true); })} className={`${viewCert ? 'cert-container long' : 'cert-container  hover-lift'} `}>
+            <div tabIndex={0} role="button" aria-label="Open GitHub certificate" aria-expanded={viewCert} onClick={()=>{setpdfContainer(gitHubCert);setViewCert(true)}} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(gitHubCert); setViewCert(true); })} className={`${viewCert ? 'cert-container long' : 'cert-container  hover-lift'} `}>
               {
                 viewCert
                   ?
@@ -236,7 +236,7 @@ function Home() {
                   )
               }
             </div>
-            <div tabIndex={0} role="button" onClick={()=>{setpdfContainer(AIEssentials);setViewCert(true)}} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(AIEssentials); setViewCert(true); })} className='hover-lift cert-container'>
+            <div tabIndex={0} role="button" aria-label="Open Google AI Essentials certificate" onClick={()=>{setpdfContainer(AIEssentials);setViewCert(true)}} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(AIEssentials); setViewCert(true); })} className='hover-lift cert-container'>
               <div className='cert-icon'>
                 <span className="material-symbols-outlined">
                   license
