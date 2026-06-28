@@ -15,7 +15,7 @@ export default function Project() {
                         <div className='subtxt text-center'>A handful of projects I'm proud of - built with care for users and code quality.</div>
                     </div>
                     <div className='flex flex-center flex-wrap height-100 width-100 gap-40'>
-                        <div tabIndex={5} className='hover-lift flex flex-col project-box gap-20'>
+                        <div className='hover-lift flex flex-col project-box gap-20'>
                             <div className='flex flex-center projectbox-img-container'>
                                 <img src="./growth-tracker-icon.png" height="80%" />
                             </div>
@@ -31,17 +31,17 @@ export default function Project() {
                                 </ul>
                             </div>
                             <div className='flex gap-20'>
-                                <button tabIndex={6} className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL}`, "_blank") }}>
+                                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL}`, "_blank") }}>
                                     <span className="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>
-                                <button tabIndex="20" className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GROWTH_TRACKER_LINK}`, "_blank") }}>
+                                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GROWTH_TRACKER_LINK}`, "_blank") }}>
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     <span>Live Demo</span>
                                 </button>
                             </div>
                         </div>
-                        <div tabIndex={7} className='hover-lift flex flex-col project-box gap-15 '>
+                        <div className='hover-lift flex flex-col project-box gap-15 '>
                             <div className='flex flex-center projectbox-img-container'>
                                 <img src="./study-ai.png" height="80%" />
                             </div>
@@ -55,17 +55,17 @@ export default function Project() {
                                 </ul>
                             </div>
                             <div className='flex gap-20'>
-                                <button tabIndex={8} className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL}`, "_blank") }}>
+                                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL}`, "_blank") }}>
                                     <span className="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>
-                                <button tabIndex="20" className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_INTELLISTUDY_LINK}`, "_blank") }}>
+                                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_INTELLISTUDY_LINK}`, "_blank") }}>
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     <span>Live Demo</span>
                                 </button>
                             </div>
                         </div>
-                        <div tabIndex={9} className='hover-lift flex flex-col project-box gap-15'>
+                        <div className='hover-lift flex flex-col project-box gap-15'>
                             <div className='flex flex-center projectbox-img-container'>
                                 <img src="./portfolio-icon.png" height="80%" />
                             </div>
@@ -81,7 +81,7 @@ export default function Project() {
                                 </ul>
                             </div>
                             <div className='flex gap-20'>
-                                <button tabIndex={10} className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_PORTFOLIO_URL}`, "_blank") }}>
+                                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_PORTFOLIO_URL}`, "_blank") }}>
                                     <span className="fa-brands fa-github cursor-pointer"></span>
                                     <span>Code</span>
                                 </button>

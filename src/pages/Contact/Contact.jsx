@@ -39,7 +39,7 @@ export default function Contact() {
                         <div className='heading-4'>Let's Connect</div>
                         <div className='subtxt text-center'>Have a role, project, or just a hello? I'd love to hear from you.</div>
                     </div>
-                    <div tabIndex={5} className='message-container'>
+                    <div className='message-container'>
                         <form ref={form} className='flex  flex-col gap-40' onSubmit={sendEmail}>
                             <div>
                                 <span className='h-5'>Send a message</span>
@@ -47,22 +47,22 @@ export default function Contact() {
                             <div className='flex gap-20'>
                                 <div className='flex width-50 flex-col gap-5'>
                                     <label>Name</label>
-                                    <input tabIndex={6} type="text" placeholder='Your name' name="name" required></input>
+                                    <input type="text" placeholder='Your name' name="name" required></input>
                                 </div>
                                 <div className='flex width-50 flex-col gap-5'>
                                     <label>Email</label>
-                                    <input tabIndex={7} type="email" placeholder='you@company.com' name="email" required></input>
+                                    <input type="email" placeholder='you@company.com' name="email" required></input>
                                 </div>
                             </div>
                             <div className='flex width-100 flex-col gap-5'>
                                 <label>Subject</label>
-                                <input tabIndex={8} type="text" placeholder={`What's this about?`} name="title" required></input>
+                                <input type="text" placeholder={`What's this about?`} name="title" required></input>
                             </div>
                             <div className='flex width-100 flex-col gap-5'>
                                 <label>Message</label>
-                                <textarea tabIndex={9} placeholder='Tell me about the role or project..' name="message" required/>
+                                <textarea placeholder='Tell me about the role or project..' name="message" required/>
                             </div>
-                            <button tabIndex={10} className='flex flex-center gap-10 magic-btn gen-btn width-50 transition'>
+                            <button className='flex flex-center gap-10 magic-btn gen-btn width-50 transition'>
                                 {
                                     loading
                                         ?

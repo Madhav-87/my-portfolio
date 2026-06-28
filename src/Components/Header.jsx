@@ -18,17 +18,17 @@ export default function Header({ activeEle }) {
                         M
                     </div>
                     <div><h3>Madhav Bondhare</h3></div>
-                    <div onClick={()=>{setSliderOpen(prev=>!prev)}} className={`${mobile ? 'flex flex-col gap-10 three-dots-icon' : ''}`}>
+                    <div tabIndex={0} role="button" onClick={()=>{setSliderOpen(prev=>!prev)}} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSliderOpen(prev=>!prev); } }} className={`${mobile ? 'flex flex-col gap-10 three-dots-icon' : ''}`}>
                         <span className={`${sliderOpen? 'lines cross-1': 'lines'}`}></span>
                         <span className={`${sliderOpen? 'lines cross-2': 'lines'}`}></span>
                     </div>
                 </div>
 
                 <div className={`${mobile? `mobile-slider ${sliderOpen? 'slide-open': ' '}`: '' } header-box-50`}>
-                    <Link tabindex="1" className={`nav-items color-blue-hover ${active === "Home" ? 'active-item' : ""}`} to="/">Home</Link>
-                    <Link tabindex="2" className={`nav-items color-blue-hover ${active === "Projects" ? 'active-item' : ""}`} to="/projects">Projects</Link>
-                    <Link tabindex="3" className={`nav-items color-blue-hover ${active === "Experience" ? 'active-item' : ""}`} to="/experience">Experience</Link>
-                    <Link tabindex="4" className={`nav-items color-blue-hover ${active === "Contact" ? 'active-item' : ""}`} to="/contact">Contact</Link>
+                    <Link className={`nav-items color-blue-hover ${active === "Home" ? 'active-item' : ""}`} to="/">Home</Link>
+                    <Link className={`nav-items color-blue-hover ${active === "Projects" ? 'active-item' : ""}`} to="/projects">Projects</Link>
+                    <Link className={`nav-items color-blue-hover ${active === "Experience" ? 'active-item' : ""}`} to="/experience">Experience</Link>
+                    <Link className={`nav-items color-blue-hover ${active === "Contact" ? 'active-item' : ""}`} to="/contact">Contact</Link>
                 </div>
             </div>
         </header>
