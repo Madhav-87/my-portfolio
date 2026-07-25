@@ -49,7 +49,7 @@ export default function Experience() {
                         <div className='hover-lift flex flex-col gap-5 ex-box-container'>
                             <div className='h-6'>MGM's College of Computer Science and IT, Nanded</div>
                             <div className='subtxt color-blue'>B.C.A, Computer Application</div>
-                            <div className='subtxt'>CGPA: 9.42</div>
+                            <div className='subtxt'>CGPA: 9.28</div>
                         </div>
                     </div>
                 </div>

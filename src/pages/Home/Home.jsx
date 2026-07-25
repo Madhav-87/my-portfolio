@@ -78,7 +78,7 @@ function Home() {
                 </span>
               </div>
               <div className="box-title">Education</div>
-              <div className="subtxt">B.C.A at MGM's College of Computer Science and IT, Nanded - CGPA 9.42</div>
+              <div className="subtxt">B.C.A at MGM's College of Computer Science and IT, Nanded - CGPA 9.28</div>
             </div>
             <div className="hover-lift about-Container gap-20-column cursor-pointer">
               <div className="icon-badge magic-btn">
