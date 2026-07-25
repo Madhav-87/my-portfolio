@@ -9,7 +9,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import growthTrackerImg from '../../assets/growth-tracker-img.png';
 import javascriptcert from '/JavaScript-Cert.pdf';
 import gitHubCert from '/Google Git and GitHub Certificate.pdf';
-
+import ReactBasic from '/react_certificate.pdf';
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -190,7 +190,7 @@ function Home() {
             <div className="heading-4">Continuous Learning</div>
             <div className="color-grey">Recent credentials.</div>
           </div>
-          <div className="d-flex gap-25">
+          <div className="d-flex gap-25 laptop-grid-column">
             <div tabIndex={0} role="button" aria-label="Open JavaScript certificate" onClick={()=>{setViewCert(true);setpdfContainer(javascriptcert);setViewCert(true)}} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setViewCert(true); setpdfContainer(javascriptcert); setViewCert(true); })} className='hover-lift cert-container'>
               <div className='cert-icon'>
                 <span className="material-symbols-outlined">
@@ -245,6 +245,17 @@ function Home() {
               <div className='cert-info-panel'>
                 <div className='cert-title'>Google AI Essentials</div>
                 <div className='cert-subtxt'>Google / Coursera</div>
+              </div>
+            </div>
+            <div tabIndex={0} role="button" aria-label="Open Google AI Essentials certificate" onClick={()=>{setpdfContainer(ReactBasic);setViewCert(true)}} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(ReactBasic); setViewCert(true); })} className='hover-lift cert-container'>
+              <div className='cert-icon'>
+                <span className="material-symbols-outlined">
+                  license
+                </span>
+              </div>
+              <div className='cert-info-panel'>
+                <div className='cert-title'>React Basics</div>
+                <div className='cert-subtxt'>Meta / Coursera</div>
               </div>
             </div>
           </div>

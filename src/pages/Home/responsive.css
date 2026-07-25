@@ -1,12 +1,10 @@
-/* =============================================
-   RESPONSIVE.CSS — Media Queries Only
-   Import this AFTER App.css and utility.css
-   Usage: import './responsive.css'
-   ============================================= */
-
-/* ─────────────────────────────────────────────
-   TABLET  (601px – 1024px)
-───────────────────────────────────────────── */
+@media (min-width:1024px) {
+  .laptop-grid-column{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  }
+}
 @media (max-width: 1024px) and (min-width: 601px) {
 
   .cert-container.long {
