@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import isMobile from 'is-mobile';
 import './header.css';
-
 export default function Header({ activeEle }) {
     let [active, setActive] = useState("");
     useEffect(() => {
@@ -14,8 +13,8 @@ export default function Header({ activeEle }) {
         <header>
             <div className='header-div'>
                 <div className='header-box-20'>
-                    <div className='profile-icon magic-btn'>
-                        M
+                    <div className='profile-icon'>
+                        <img src="./portfolio-icon.png" height={30} alt="site icon"/>
                     </div>
                     <div><h3>Madhav Bondhare</h3></div>
                     <div
