@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import isMobile from 'is-mobile';
+import {isMobile,isTablet} from 'react-device-detect';
 import './header.css';
 export default function Header({ activeEle }) {
     let [active, setActive] = useState("");
@@ -8,8 +8,10 @@ export default function Header({ activeEle }) {
         setActive(activeEle);
     }, []);
     let [sliderOpen,setSliderOpen]=useState(false);
-    let [mobile,setMobile]=useState(isMobile())
+    let [mobile,setMobile]=useState(window.innerWidth<=1024)
     return (
+        <>
+        {sliderOpen && (<div className='blur-background'></div>)}
         <header>
             <div className='header-div'>
                 <div className='header-box-20'>
@@ -31,14 +33,17 @@ export default function Header({ activeEle }) {
                         <span className={`${sliderOpen? 'lines cross-2': 'lines'}`}></span>
                     </div>
                 </div>
-
+                
                 <div id="main-navigation" className={`${mobile? `mobile-slider ${sliderOpen? 'slide-open': ' '}`: '' } header-box-50`}>
-                    <Link className={`nav-items color-blue-hover ${active === "Home" ? 'active-item' : ""}`} to="/">Home</Link>
+                   <div className='nav-text-container gap-50'>
+                     <Link className={`nav-items color-blue-hover ${active === "Home" ? 'active-item' : ""}`} to="/">Home</Link>
                     <Link className={`nav-items color-blue-hover ${active === "Projects" ? 'active-item' : ""}`} to="/projects">Projects</Link>
                     <Link className={`nav-items color-blue-hover ${active === "Experience" ? 'active-item' : ""}`} to="/experience">Experience</Link>
                     <Link className={`nav-items color-blue-hover ${active === "Contact" ? 'active-item' : ""}`} to="/contact">Contact</Link>
+                   </div>
                 </div>
             </div>
         </header>
+        </>
     )
 }
