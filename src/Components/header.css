@@ -77,7 +77,14 @@
   align-items: center;
   gap: 20px;
 }
-@media (max-width:1024px) {
+@media (max-width: 932px) and (orientation: landscape) {
+  .nav-text-container{
+    display: flex;
+    width: 50%;
+    gap: 50px;
+  }
+}
+@media (max-width:1024px) and (orientation: portrait){
   .nav-text-container{
     display: flex;
     flex-direction: column;
