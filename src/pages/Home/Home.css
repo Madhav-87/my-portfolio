@@ -183,27 +183,29 @@ header{
   animation: scale-in 0.5s ease-in-out,
   bubble 3s ease infinite 0.5s;
   height: 350px;
-  /* adjust 320–400px as needed */
   width: 40%;
-
   background: #f7f8fb;
-  /* light card background */
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.09);
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* soft shadow (modern UI style) */
   box-shadow:
     0 10px 25px rgba(0, 0, 0, 0.05),
-    0 4px 10px rgba(0, 0, 0, 0.03);
-
-  /* optional smooth look */  
+    0 4px 10px rgba(0, 0, 0, 0.03); 
 }
 .image-container img{
   border-radius: 20px;
   animation: scale-in 2s ease-in-out;
+}
+
+
+.cert-container.hide{
+    width:0;
+    opacity:0;
+    display: none;
+    padding:0;
+    margin:0;
 }
 .intro-info-section {
   height: 100%;
@@ -460,6 +462,17 @@ header{
   width: 60vw;
   background: white;
   z-index: 1000;
+}
+.blur-background{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  inset:0;
+  height: 200vh;
+  width: 200vw;
+  transform: translate(-50%,-50%);
+  backdrop-filter: blur(4px);
+  z-index: 999;
 }
 .cert-icon {
   width: 20%;
