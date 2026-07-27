@@ -36,7 +36,7 @@ export default function Project() {
                                     <span>Code</span>
                                 </button>
                                 <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GROWTH_TRACKER_LINK}`, "_blank") }}>
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                     <span>Live Demo</span>
                                 </button>
                             </div>
@@ -60,7 +60,7 @@ export default function Project() {
                                     <span>Code</span>
                                 </button>
                                 <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_INTELLISTUDY_LINK}`, "_blank") }}>
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                     <span>Live Demo</span>
                                 </button>
                             </div>

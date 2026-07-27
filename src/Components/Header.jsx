@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import {isMobile,isTablet} from 'react-device-detect';
 import './header.css';
 export default function Header({ activeEle }) {
     let [active, setActive] = useState("");
+    const handleResize =()=>{
+        setMobile(window.innerWidth<=1024);
+        if(!window.innerWidth<=1024)
+            setSliderOpen(false);
+    }
     useEffect(() => {
         setActive(activeEle);
     }, []);
     let [sliderOpen,setSliderOpen]=useState(false);
-    let [mobile,setMobile]=useState(window.innerWidth<=1024)
+    let [mobile,setMobile]=useState(window.innerWidth<=1024);
+    useEffect(()=>{
+        window.addEventListener("resize",handleResize);
+        return ()=> window.removeEventListener("resize",handleResize);
+    },[]);
     return (
         <>
         {sliderOpen && (<div className='blur-background'></div>)}
