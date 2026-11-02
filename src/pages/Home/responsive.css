@@ -1,10 +1,11 @@
 @media (min-width:1024px) {
-  .laptop-grid-column{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  .laptop-grid-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
+
 @media (max-width: 1024px) and (min-width: 601px) {
 
   .cert-container.long {
@@ -105,16 +106,17 @@
 
   .cert-container.long {
     width: 90vw;
-    height:auto;
+    height: auto;
     aspect-ratio: 1/0.9;
     top: 50%;
     left: 50%;
     border-radius: 8px;
   }
+
   /* ── Header ── */
   .header-div {
     height: auto;
-    width:auto;
+    width: auto;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -277,5 +279,211 @@
     height: auto;
     padding: 20px 0px;
     text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .mainHome .project-show-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mainHome .project-img-section,
+  .mainHome .project-desc {
+    width: 100%;
+  }
+
+  .mainHome .project-img-section .image-container {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 1.35 / 1;
+  }
+
+  .mainHome .about-me-section>.d-flex.gap-25 {
+    flex-wrap: wrap;
+  }
+
+  .mainHome .secondary-projects {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mainHome .home-contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHome .intro-headline {
+    font-size: clamp(2.8rem, 10vw, 4.2rem);
+  }
+
+  .mainHome #certificates>.d-flex.gap-25 {
+    width: 100%;
+    max-width: 620px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mainHome #certificates .cert-container {
+    width: 100%;
+    flex: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainHome .swarm-cursor-canvas {
+    opacity: .22;
+  }
+
+  .mainHome>div:first-child {
+    min-height: auto;
+    padding: 88px 18px 72px;
+  }
+
+  .mainHome .intro-info-section {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mainHome .intro-info-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainHome .intro-info-content p {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mainHome .intro-info-content p {
+    gap: 20px;
+    font-size: 1rem;
+  }
+
+  .mainHome .intro-headline {
+    font-size: clamp(2.45rem, 11vw, 3.25rem);
+  }
+
+  .mainHome .intro-info-content p .animation-fade-in-up {
+    line-height: 1.8 !important;
+  }
+
+  .mainHome .btn-section {
+    max-width: 280px;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mainHome .btn-section>div,
+  .mainHome .btn-section a,
+  .mainHome .btn-section button {
+    width: 100%;
+  }
+
+  .mainHome .socio-media-label-sec {
+    gap: 16px;
+    margin-top: 26px;
+  }
+
+  .mainHome .socio-media-label-sec .fa-brands,
+  .mainHome .socio-media-label-sec .fa-regular {
+    font-size: 1.5rem;
+  }
+
+  .mainHome .socio-media-label-sec>div[role="button"][aria-label^="Visit"] {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    font-size: 1.5rem;
+  }
+
+  .mainHome .about-me-section {
+    padding: 78px 18px;
+    gap: 30px;
+  }
+
+  .mainHome .about-me-section>.gap-10-column {
+    align-items: flex-start;
+  }
+
+  .mainHome .about-me-section>.d-flex.gap-25 {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .mainHome .about-Container {
+    flex: none;
+    width: 100%;
+    padding: 19px;
+  }
+
+  .mainHome .project-show-panel {
+    padding: 18px;
+    gap: 21px;
+  }
+
+  .mainHome .project-img-section .image-container {
+    aspect-ratio: 1.28 / 1;
+  }
+
+  .mainHome .project-desc .flex {
+    flex-wrap: wrap;
+  }
+
+  .mainHome .cert-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .mainHome .cert-container.long {
+    width: 90vw;
+    max-width: none;
+    height: auto;
+    min-height: 65vh;
+  }
+
+  .mainHome .communication-container {
+    min-height: 0;
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body:has(.mainHome) .single-page-header .header-div {
+    width: 100%;
+    height: 76px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 18px !important;
+  }
+
+  body:has(.mainHome) .single-page-header .header-box-20 {
+    width: auto;
+  }
+
+  body:has(.mainHome) .single-page-header .header-box-50 {
+    box-sizing: border-box;
+    position: fixed;
+    top: 76px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100dvh - 76px) !important;
+    margin: 0;
+    padding: 24px;
+    background: rgb(10 10 10 / 96%);
+    backdrop-filter: blur(14px);
+  }
+
+  body:has(.mainHome) .single-page-header .slide-open .nav-items {
+    color: #e5e5e5;
+    font-size: 1rem;
+  }
+
+  body:has(.mainHome) .single-page-header .slide-open .nav-items:hover {
+    color: var(--home-highlight);
   }
 }

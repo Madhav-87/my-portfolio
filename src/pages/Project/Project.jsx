@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../../Components/Header.jsx';
+import Header from '../../components/layout/Header.jsx';
 import './Project.css';
-import Footer from '../../Components/Footer.jsx';
+import Footer from '../../components/layout/Footer.jsx';
 
 export default function Project() {
     return (
@@ -14,10 +14,10 @@ export default function Project() {
                         <div className='heading-4'>Selected Work</div>
                         <div className='subtxt text-center'>A handful of projects I'm proud of - built with care for users and code quality.</div>
                     </div>
-                    <div className='flex flex-center flex-wrap height-100 width-100 gap-40'>
+                    <div className='project-grid'>
                         <div className='hover-lift flex flex-col project-box gap-20'>
                             <div className='flex flex-center projectbox-img-container'>
-                                <img src="./growth-tracker-icon.png" alt='growth tracker dashboard image' height="80%" />
+                                <img className='project-image' src="/growth-tracker-icon.png" alt='growth tracker dashboard image' />
                             </div>
                             <div className='h-5'>Growth Tracker</div>
                             <div className='subtxt'>Growth Tracker is a personal development web application designed to help users set meaningful goals, track daily progress, and build long-term habits. It provides structured planning, performance analytics, and visual reports to improve consistency and productivity. The platform focuses on transforming small daily actions into measurable growth over time.</div>
@@ -43,7 +43,7 @@ export default function Project() {
                         </div>
                         <div className='hover-lift flex flex-col project-box gap-15 '>
                             <div className='flex flex-center projectbox-img-container'>
-                                <img src="./study-ai.png" alt="study planner image" height="80%" />
+                                <img className='project-image' src="/study-ai.png" alt="study planner image" />
                             </div>
                             <div className='h-5'>AI Study Planner</div>
                             <div className='subtxt'>An AI-based study planner that helps students create structured study schedules directly from their syllabus. It uses AI to organize topics efficiently and includes a Pomodoro timer to improve focus and productivity during study sessions.</div>
@@ -67,7 +67,7 @@ export default function Project() {
                         </div>
                         <div className='hover-lift flex flex-col project-box gap-15'>
                             <div className='flex flex-center projectbox-img-container'>
-                                <img src="./portfolio-icon.png" alt="site icon" height="80%" />
+                                <img className='project-image' src="/portfolio-icon.png" alt="site icon" />
                             </div>
                             <div className='h-5'>Personal Portfolio</div>
                             <div className='subtxt'>A personal portfolio website created to showcase my skills, projects, experience, and certifications in a clear and organized way. It acts as a central place where recruiters and others can explore my work and understand my technical abilities.</div>

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": false,
+  "tailwind": {
+    "config": "",
+    "css": "src/index.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "registries": {
+    "@chaiui": "https://ui.chaicode.com/r/{name}.json",
+    "@react-bits": "https://reactbits.dev/r/{name}.json"
+  },
+  "aliases": {
+    "components": "@/pages/Version2/components",
+    "utils": "@/lib/utils",
+    "ui": "@/pages/Version2/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  }
+}

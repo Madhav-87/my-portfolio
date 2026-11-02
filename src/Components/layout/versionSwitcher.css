@@ -1,0 +1,65 @@
+.site-version-switcher {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  font: inherit;
+}
+
+.site-version-dropdown-trigger {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 10px;
+  border: 1px solid rgb(255 247 237 / 15%);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 4%);
+  color: #d4d4d4;
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 200ms ease, background-color 200ms ease, color 200ms ease;
+}
+
+.site-version-dropdown-trigger:hover { border-color: rgb(255 247 237 / 28%); background: rgb(255 255 255 / 7%); color: #fff; }
+.site-version-dropdown-trigger:focus-visible { outline: 2px solid #f5e8d4; outline-offset: 3px; }
+
+.site-version-dropdown-menu {
+  position: absolute;
+  z-index: 2200;
+  top: calc(100% + 8px);
+  right: 0;
+  display: grid;
+  min-width: 156px;
+  gap: 2px;
+  padding: 5px;
+  border: 1px solid rgb(255 247 237 / 15%);
+  border-radius: 9px;
+  background: #111;
+  color: #d4d4d4;
+}
+
+.site-version-dropdown-option {
+  display: flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 0 10px;
+  border-radius: 6px;
+  color: inherit;
+  font-size: .82rem;
+  text-decoration: none;
+}
+
+.site-version-dropdown-option:hover,
+.site-version-dropdown-option[aria-current='page'] { background: rgb(255 255 255 / 7%); color: #fff; }
+
+.site-version-switcher--dark .site-version-dropdown-trigger { border-color: rgb(255 247 237 / 15%); background: rgb(255 255 255 / 4%); color: #d4d4d4; }
+.site-version-switcher--dark .site-version-dropdown-trigger:hover { border-color: rgb(255 247 237 / 30%); background: rgb(255 255 255 / 7%); color: #fff; }
+.site-version-switcher--dark .site-version-dropdown-menu { border-color: rgb(255 247 237 / 15%); background: #111; color: #d4d4d4; }
+.site-version-switcher--dark .site-version-dropdown-option:hover,
+.site-version-switcher--dark .site-version-dropdown-option[aria-current='page'] { background: rgb(255 255 255 / 8%); color: #fff; }

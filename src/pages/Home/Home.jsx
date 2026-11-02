@@ -1,291 +1,35 @@
-import { useEffect, useState } from 'react'
-import './Home.css'
-import '../../utility.css';
+import './Home.css';
+import '../../styles/utility.css';
 import './responsive.css';
-import Header from '../../Components/Header.jsx';
-import Footer from '../../Components/Footer.jsx';
-import AIEssentials from '/Google AI Essentials.pdf'
-import { Link, useNavigate } from 'react-router-dom';
-import growthTrackerImg from '../../assets/growth-tracker-img.png';
-import javascriptcert from '/JavaScript-Cert.pdf';
-import gitHubCert from '/Google Git and GitHub Certificate.pdf';
-import ReactBasic from '/react_certificate.pdf';
+import Header from '../../components/layout/Header.jsx';
+import Footer from '../../components/layout/Footer.jsx';
+import FadeContent from '../../components/effects/FadeContent.jsx';
+import TargetCursor from '../../components/effects/TargetCursor.jsx';
+import Introduction from './introduction/Introduction';
+import About from './about/About';
+import Skills from './skills/Skills';
+import Certificates from './certificates/Certificates';
+import Projects from './projects/Projects';
+import ContactSection from './contact/ContactSection';
 
-function Home() {
-  const [count, setCount] = useState(0)
-  const navigate = useNavigate();
-  let [viewCert, setViewCert] = useState(false);
-  let [pdfConatiner, setpdfContainer] = useState(null);
-
-  const handleInteractiveKeyDown = (event, action) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      action();
-    }
-  };
-
-  useEffect(() => {
-  }, [])
+export default function Home() {
   return (
-
     <>
-      <Header activeEle={"Home"} />
-      <main className='mainHome'>
-        <div className="intro-panel">
-          <div className="animation-fade-in-up intro-info-section">
-            <div className="label-tag">
-              <span className="ripple-point"></span>
-              <span>Available for opportunities</span>
-            </div>
-            <div className="intro-info-content">
-              <p>
-                <span className="heading-3">
-                  Hi, I'm <span className='blue-gradient'>Madhav</span> Full-Stack Developer.
-                </span>
-                <span className="animation-fade-in-up delay-100" style={{ lineHeight: "30px" }}>
-                  Hey, I'm Madhav  — a BCA grad who loves crafting useful, innovative web apps from the ground up.
-                  Comfortable across the stack: React,  Node.js,  JavaScript,  MySQL
-                </span>
-              </p>
-            </div>
-            <div className="btn-section animation-fade-in-up delay-200">
-              <div><Link to="/projects"><button className="magic-btn">View my work</button></Link></div>
-              <div><a href='./cv.pdf' download="madhav_bondhare_cv"><button>Download CV</button></a></div>
-            </div>
-            <div className="socio-media-label-sec animation-fade-in-up delay-200">
-              <div tabIndex={0} role="button" aria-label="Visit GitHub profile" className="fa-brands fa-github cursor-pointer color-blue-hover" onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_URL}`, "_blank") }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(`${import.meta.env.VITE_GITHUB_URL}`, "_blank"))}></div>
-              <div tabIndex={0} role="button" aria-label="Visit LinkedIn profile" className="fa-brands fa-linkedin cursor-pointer color-blue-hover" onClick={() => { window.open(`${import.meta.env.VITE_LINKEDIN_URL}`, "_blank") }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(`${import.meta.env.VITE_LINKEDIN_URL}`, "_blank"))}></div>
-              <div tabIndex={0} role="button" aria-label="Go to contact page" className="fa-regular fa-envelope cursor-pointer color-blue-hover" onClick={() => { navigate('/contact') }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => navigate('/contact'))}></div>
-              <div className="d-flex gap-5"><span className="material-symbols-outlined">explore_nearby</span> <span className="subtxt">Nanded, India</span></div>
-            </div>
-          </div>
-          <div className="image-container delay-200">
-            <img src={"./portfolio-icon.png"} alt="site icon" height={"100%"} />
-          </div>
+      <Header activeEle="Home" singlePage />
+      <main className="mainHome">
+        <div id="hero" className="home-hero-container">
+          <FadeContent effect="mist" duration={1.8} ease="power2.out" stagger={0.1} threshold={0.1}>
+            <Introduction />
+          </FadeContent>
         </div>
-        <div className="animation-fade-in-up about-me-section">
-          <div className="gap-10-column text-center">
-            <div className="color-blue fw-5">ABOUT</div>
-            <div className="heading-4">A quick intro</div>
-            <div className="color-grey">Here's what makes me trick.</div>
-          </div>
-          <div className="d-flex gap-25">
-            <div className="hover-lift about-Container gap-20-column cursor-pointer">
-              <div className="icon-badge magic-btn">
-                <span className="material-symbols-outlined">
-                  school
-                </span>
-              </div>
-              <div className="box-title">Education</div>
-              <div className="subtxt">B.C.A at MGM's College of Computer Science and IT, Nanded - CGPA 9.28</div>
-            </div>
-            <div className="hover-lift about-Container gap-20-column cursor-pointer">
-              <div className="icon-badge magic-btn">
-                <span className="material-symbols-outlined">
-                  code_xml
-                </span>
-              </div>
-              <div className="box-title">What i do</div>
-              <div className="subtxt">Build full-stack web apps with JavaScript, Bootstrap, React & Node.</div>
-            </div>
-          </div>
-        </div>
-        <div className="about-me-section">
-          <div className="gap-10-column text-center">
-            <div className="color-blue fw-5">SKILLS</div>
-            <div className="heading-4">Tools I use daily</div>
-            <div className="color-grey">From design to deployment.</div>
-          </div>
-          <div className="d-flex gap-25">
-            <div className="hover-lift about-Container gap-20-column cursor-pointer">
-              <div className="box-title color-blue">FrontEnd</div>
-              <div className='list-item'>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React.Js</li>
-                  <li>Bootstrap</li>
-                </ul>
-              </div>
-            </div>
-            <div className="hover-lift about-Container gap-20-column cursor-pointer">
-              <div className="box-title color-blue">BackEnd</div>
-              <div className='list-item'>
-                <ul>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>REST API</li>
-                  <li>JWT Tokens</li>
-                </ul>
-              </div>
-            </div>
-            <div className="hover-lift about-Container gap-20-column cursor-pointer">
-              <div className="box-title color-blue">Database</div>
-              <div className='list-item'>
-                <ul>
-                  <li>SQL</li>
-                  <li>MYSQL</li>
-                  <li>MongoDB</li>
-                </ul>
-              </div>
-            </div>
-            <div className="hover-lift about-Container gap-20-column cursor-pointer">
-              <div className="box-title color-blue">Tools</div>
-              <div className='list-item'>
-                <ul>
-                  <li>Git</li>
-                  <li>Git Hub</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="about-me-section padding-top-bottom-35">
-          <div className="gap-10-column text-center d-flex" >
-            <div className="color-blue fw-5">FEATURED WORK</div>
-            <div className="heading-4">Most recent project</div>
-            <div className="color-grey">A glimpse of what i build.</div>
-          </div>
-          <div className="project-show-panel">
-            <div className='project-img-section'>
-              <div className='image-container' style={{ width: "100%" }}>
-                <img src={growthTrackerImg} alt="growth tracker dashboard image" width="100%" />
-              </div>
-
-            </div>
-            <div className='project-desc'>
-              <div className="label-tag">
-                <i className="fa-solid fa-star"></i>
-                <span>Featured</span>
-              </div>
-              <div className='heading-4'>
-                Growth  Tracker
-              </div>
-              <div className='subtxt'>Growth Tracker is a personal development web application designed to help users set meaningful goals, track daily progress, and build long-term habits. It provides structured planning, performance analytics, and visual reports to improve consistency and productivity. The platform focuses on transforming small daily actions into measurable growth over time.</div>
-              <div>
-                <ul>
-                  <li>React</li>
-                  <li>Express</li>
-                  <li>MYSQL</li>
-                </ul>
-              </div>
-              <div className='flex gap-20'>
-                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL}`, "_blank") }}>
-                  <span className="fa-brands fa-github cursor-pointer"></span>
-                  <span>Code</span>
-                </button>
-                <button className='magic-btn gen-btn flex flex-center gap-10' onClick={() => { window.open(`${import.meta.env.VITE_GROWTH_TRACKER_LINK}`, "_blank") }}>
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                  <span>Live Demo</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="about-me-section">
-          <div className="gap-10-column text-center d-flex" >
-            <div className="color-blue fw-5">CERTIFICATIONS</div>
-            <div className="heading-4">Continuous Learning</div>
-            <div className="color-grey">Recent credentials.</div>
-          </div>
-          <div className="d-flex gap-25 laptop-grid-column">
-            <div tabIndex={0} role="button" aria-label="Open JavaScript certificate" onClick={() => { setViewCert(true); setpdfContainer(javascriptcert); setViewCert(true) }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setViewCert(true); setpdfContainer(javascriptcert); setViewCert(true); })} className='hover-lift cert-container'>
-              <div className='cert-icon'>
-                <span className="material-symbols-outlined">
-                  license
-                </span>
-              </div>
-              <div className='cert-info-panel'>
-                <div className='cert-title'>JavaScript</div>
-                <div className='cert-subtxt'>Infosys Springboard</div>
-              </div>
-            </div>
-            {viewCert && <div className="blur-background"></div>}
-            <div tabIndex={0} role="button" aria-label="Open GitHub certificate" aria-expanded={viewCert} onClick={() => { setpdfContainer(gitHubCert); setViewCert(true) }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(gitHubCert); setViewCert(true); })} className={`cert-container ${viewCert ? 'long' : 'hide  hover-lift'} `}>
-              {
-                viewCert
-                  ?
-                  (
-                    <>
-                      {viewCert && (<div className='flex flex-col gap-10 width-100 height-100'>
-                        <iframe src={pdfConatiner + "#toolbar=0"}
-                          width={"100%"}
-                          height={"90%"}
-                          style={{
-                            overflow: "hidden",
-                            border: "1px solid black",
-                          }}
-                        />
-                        <button className='magic-btn gen-btn' onClick={(e) => { e.stopPropagation(); setViewCert(false); }}> Close</button>
-                      </div>)}
-                    </>
-                  )
-                  :
-                  (
-                    <div className='certificate-show-hide-box'></div>
-                  )
-              }
-            </div>
-            <div tabIndex={0} role="button" aria-label="Open Google Intoduction to Git and GitHub certificate" onClick={() => { setpdfContainer(gitHubCert); setViewCert(true) }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(gitHubCert); setViewCert(true); })} className='hover-lift cert-container'>
-              <div className='cert-icon'>
-                <span className="material-symbols-outlined">
-                  license
-                </span>
-              </div>
-              <div className='cert-info-panel '>
-                <div className='cert-title'>Introduction to Git and GitHub</div>
-                <div className='cert-subtxt'>Google / Coursera</div>
-              </div>
-            </div>
-            <div tabIndex={0} role="button" aria-label="Open Google AI Essentials certificate" onClick={() => { setpdfContainer(AIEssentials); setViewCert(true) }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(AIEssentials); setViewCert(true); })} className='hover-lift cert-container'>
-              <div className='cert-icon'>
-                <span className="material-symbols-outlined">
-                  license
-                </span>
-              </div>
-              <div className='cert-info-panel'>
-                <div className='cert-title'>Google AI Essentials</div>
-                <div className='cert-subtxt'>Google / Coursera</div>
-              </div>
-            </div>
-            <div tabIndex={0} role="button" aria-label="Open Google AI Essentials certificate" onClick={() => { setpdfContainer(ReactBasic); setViewCert(true) }} onKeyDown={(event) => handleInteractiveKeyDown(event, () => { setpdfContainer(ReactBasic); setViewCert(true); })} className='hover-lift cert-container'>
-              <div className='cert-icon'>
-                <span className="material-symbols-outlined">
-                  license
-                </span>
-              </div>
-              <div className='cert-info-panel'>
-                <div className='cert-title'>React Basics</div>
-                <div className='cert-subtxt'>Meta / Coursera</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='about-me-section'>
-          <div className='hover-lift flex flex-center flex-col gap-15 communication-container text-center'>
-            <div>
-              <span className="material-symbols-outlined color-blue rocket-icon">
-                rocket_launch
-              </span>
-            </div>
-            <div>
-              <span className='h-5'>Let's build something great.</span>
-            </div>
-            <div>
-              <span className='subtxt '>
-                I'm open to internship and full-time roles. Drop me a line - I usually reply within a day.
-              </span>
-            </div>
-            <div>
-              <Link to="/contact"><button className='magic-btn gen-btn'>Get in touch</button></Link>
-            </div>
-          </div>
-        </div>
+        <TargetCursor spinDuration={2} hideDefaultCursor parallaxOn />
+        <About />
+        <Skills />
+        <Certificates />
+        <Projects />
+        <ContactSection />
       </main>
       <Footer />
     </>
-  )
+  );
 }
-
-export default Home
