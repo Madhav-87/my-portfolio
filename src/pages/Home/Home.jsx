@@ -11,7 +11,7 @@ import Skills from './skills/Skills';
 import Certificates from './certificates/Certificates';
 import Projects from './projects/Projects';
 import ContactSection from './contact/ContactSection';
-
+import ClickSpark from '../../components/effects/ClickSpark.jsx';
 export default function Home() {
   return (
     <>

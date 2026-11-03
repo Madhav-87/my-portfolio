@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import SectionContainer from '../section-container/SectionContainer';
-
+import ClickSpark from '../../../components/effects/ClickSpark.jsx';
 const certificates = [
   { title: 'JavaScript', issuer: 'Infosys Springboard', file: '/JavaScript-Cert.pdf' },
   { title: 'Introduction to Git and GitHub', issuer: 'Google / Coursera', file: '/Google Git and GitHub Certificate.pdf' },
@@ -27,6 +27,14 @@ export default function Certificates() {
       </div>
       <div className="d-flex gap-25 laptop-grid-column">
         {certificates.map((certificate) => (
+          <ClickSpark
+                                  sparkColor="#fff"
+                                  shape="line"
+                                  sparkCount={8}
+                                  sparkSize={14}
+                                  sparkRadius={30}
+                                  duration={500}
+                                >
           <div
             key={certificate.title}
             tabIndex={0}
@@ -42,6 +50,7 @@ export default function Certificates() {
               <div className="cert-subtxt">{certificate.issuer}</div>
             </div>
           </div>
+          </ClickSpark>
         ))}
       </div>
       {selectedCertificate && (
@@ -50,7 +59,17 @@ export default function Certificates() {
           <div className="cert-container long">
             <div className="flex flex-col gap-10 width-100 height-100">
               <iframe title={`${selectedCertificate.title} certificate`} src={`${selectedCertificate.file}#toolbar=0`} width="100%" height="90%" />
+               <ClickSpark
+                                  sparkColor="#fff"
+                                  shape="line"
+                                  sparkCount={8}
+                                  sparkSize={14}
+                                  sparkRadius={90}
+                                  duration={500}
+                                  
+                                >
               <button className="cursor-target magic-btn gen-btn" onClick={() => setSelectedCertificate(null)}>Close</button>
+              </ClickSpark>
             </div>
           </div>
         </div>

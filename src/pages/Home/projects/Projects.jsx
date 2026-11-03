@@ -1,7 +1,7 @@
 import SectionContainer from '../section-container/SectionContainer';
 import TiltedCard from '../../../components/effects/TiltedCard.jsx';
 import growthTrackerImg from '../../../assets/growth-tracker-img.png';
-
+import ClickSpark from '../../../components/effects/ClickSpark.jsx';
 export default function Projects() {
   return (
     <SectionContainer id="projects" className="padding-top-bottom-35" height="auto">
@@ -42,8 +42,25 @@ export default function Projects() {
           <p className="subtxt">Growth Tracker is a personal development web application designed to help users set meaningful goals, track daily progress, and build long-term habits. It provides structured planning, performance analytics, and visual reports to improve consistency and productivity. The platform focuses on transforming small daily actions into measurable growth over time.</p>
           <ul><li>React</li><li>Express</li><li>MySQL</li></ul>
           <div className="flex gap-20">
-            <a className="cursor-target magic-btn gen-btn flex flex-center gap-10" href={import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" /><span>Code</span></a>
-            <a className="cursor-target magic-btn gen-btn flex flex-center gap-10" href={import.meta.env.VITE_GROWTH_TRACKER_LINK} target="_blank" rel="noreferrer"><i className="fa-solid fa-arrow-up-right-from-square" /><span>Live Demo</span></a>
+            <ClickSpark
+              sparkColor="#fff"
+              shape="line"
+              sparkCount={8}
+              sparkSize={14}
+              sparkRadius={30}
+              duration={500}
+            >
+              <a className="cursor-target magic-btn gen-btn flex flex-center gap-10" href={import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" /><span>Code</span>
+              </a></ClickSpark>
+            <ClickSpark
+              sparkColor="#fff"
+              shape="line"
+              sparkCount={8}
+              sparkSize={14}
+              sparkRadius={30}
+              duration={500}
+            >
+              <a className="cursor-target magic-btn gen-btn flex flex-center gap-10" href={import.meta.env.VITE_GROWTH_TRACKER_LINK} target="_blank" rel="noreferrer"><i className="fa-solid fa-arrow-up-right-from-square" /><span>Live Demo</span></a></ClickSpark>
           </div>
         </div>
       </div>
@@ -56,8 +73,20 @@ export default function Projects() {
             <p className="subtxt">An AI study planner that turns a syllabus into a structured schedule, with a Pomodoro timer to support focused study.</p>
             <ul><li>React</li><li>Express</li><li>Gemini API</li></ul>
             <div className="project-actions">
-              <a className="text-link cursor-target" href={import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL} target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a>
-              <a className="text-link cursor-target" href={import.meta.env.VITE_INTELLISTUDY_LINK} target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+              <ClickSpark
+                sparkColor="#fff"
+                shape="line"
+                sparkCount={8}
+                sparkSize={14}
+                sparkRadius={30}
+                duration={500}><a className="text-link cursor-target" href={import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL} target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a></ClickSpark>
+              <ClickSpark
+                sparkColor="#fff"
+                shape="line"
+                sparkCount={8}
+                sparkSize={14}
+                sparkRadius={30}
+                duration={500}><a className="text-link cursor-target" href={import.meta.env.VITE_INTELLISTUDY_LINK} target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a></ClickSpark>
             </div>
           </div>
         </article>
@@ -68,7 +97,15 @@ export default function Projects() {
             <h3 className="heading-4">Personal Portfolio</h3>
             <p className="subtxt">A portfolio presenting my projects, skills, experience, education, and certifications in one place.</p>
             <ul><li>React</li><li>JavaScript</li><li>CSS</li></ul>
-            <div className="project-actions"><a className="text-link cursor-target" href={import.meta.env.VITE_GITHUB_PORTFOLIO_URL} target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a></div>
+            <div className="project-actions">
+              <ClickSpark
+  sparkColor="#fff"
+  shape="line"
+  sparkCount={8}
+  sparkSize={14}
+  sparkRadius={30}
+  duration={500}>
+              <a className="text-link cursor-target" href={import.meta.env.VITE_GITHUB_PORTFOLIO_URL} target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a></ClickSpark></div>
           </div>
         </article>
       </div>

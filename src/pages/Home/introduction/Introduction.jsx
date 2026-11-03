@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import SwarmCursor from '../../../components/effects/SwarmCursor.jsx';
 import VariableProximity from '../../../components/effects/VariableProximity.jsx';
-
+import ClickSpark from '../../../components/effects/ClickSpark.jsx';
 function handleInteractiveKeyDown(event, action) {
   if (event.key === 'Enter' || event.key === ' ') {
     event.preventDefault();
@@ -39,16 +39,57 @@ export default function Introduction() {
           </div>
           <div className="btn-section animation-fade-in-up delay-200">
             <div>
-              <button className="magic-btn cursor-target" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
-                View my work
-              </button>
+              <ClickSpark
+                sparkColor="#fff"
+                shape="line"
+                sparkCount={8}
+                sparkSize={14}
+                sparkRadius={30}
+                duration={500}
+              >
+                <button className="magic-btn cursor-target" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
+                  View my work
+                </button>
+              </ClickSpark>
             </div>
-            <div><a href="/cv.pdf" download="madhav_bondhare_cv"><button className="cursor-target">Download CV</button></a></div>
+            <div><ClickSpark
+              sparkColor="#fff"
+              shape="line"
+              sparkCount={8}
+              sparkSize={14}
+              sparkRadius={30}
+              duration={500}
+            ><a href="/cv.pdf" download="madhav_bondhare_cv"><button className="cursor-target">Download CV</button></a></ClickSpark>
+            </div>
           </div>
           <div className="socio-media-label-sec animation-fade-in-up delay-200">
-            <div tabIndex={0} role="button" aria-label="Visit GitHub profile" className="cursor-target fa-brands fa-github cursor-pointer color-blue-hover" onClick={() => window.open(import.meta.env.VITE_GITHUB_URL, '_blank')} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(import.meta.env.VITE_GITHUB_URL, '_blank'))} />
-            <div tabIndex={0} role="button" aria-label="Visit LinkedIn profile" className="cursor-target fa-brands fa-linkedin cursor-pointer color-blue-hover" onClick={() => window.open(import.meta.env.VITE_LINKEDIN_URL, '_blank')} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(import.meta.env.VITE_LINKEDIN_URL, '_blank'))} />
-            <a href="#contact" aria-label="Go to contact section" className="cursor-target fa-regular fa-envelope cursor-pointer color-blue-hover" />
+            <ClickSpark
+              sparkColor="#fff"
+              shape="line"
+              sparkCount={8}
+              sparkSize={14}
+              sparkRadius={30}
+              duration={500}
+            >
+              <span tabIndex={0} role="button" aria-label="Visit GitHub profile" className="cursor-target fa-brands fa-github cursor-pointer color-blue-hover" onClick={() => window.open(import.meta.env.VITE_GITHUB_URL, '_blank')} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(import.meta.env.VITE_GITHUB_URL, '_blank'))} /></ClickSpark>
+            <ClickSpark
+              sparkColor="#fff"
+              shape="line"
+              sparkCount={8}
+              sparkSize={14}
+              sparkRadius={30}
+              duration={500}
+            >
+              <span tabIndex={0} role="button" aria-label="Visit LinkedIn profile" className="cursor-target fa-brands fa-linkedin cursor-pointer color-blue-hover" onClick={() => window.open(import.meta.env.VITE_LINKEDIN_URL, '_blank')} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(import.meta.env.VITE_LINKEDIN_URL, '_blank'))} /></ClickSpark>
+            <ClickSpark
+              sparkColor="#fff"
+              shape="line"
+              sparkCount={8}
+              sparkSize={14}
+              sparkRadius={30}
+              duration={500}
+            >
+              <a href="#contact" aria-label="Go to contact section" className="cursor-target fa-regular fa-envelope cursor-pointer color-blue-hover" /></ClickSpark>
             <div className="d-flex gap-5">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-
+import ClickSpark from '../effects/ClickSpark';
 export default function Header({ activeEle, singlePage = false }) {
   const [active, setActive] = useState('');
   const [sliderOpen, setSliderOpen] = useState(false);
@@ -69,11 +69,56 @@ export default function Header({ activeEle, singlePage = false }) {
             <div className="nav-text-container gap-50">
               {singlePage ? (
                 <>
+                  <ClickSpark
+                    sparkColor="#fff"
+                    shape="line"
+                    sparkCount={8}
+                    sparkSize={14}
+                    sparkRadius={30}
+                    duration={500}
+                  >
                   <a className="nav-items cursor-target color-blue-hover" href="#about" onClick={closeMenu}>About</a>
+                  </ClickSpark>
+                  <ClickSpark
+                    sparkColor="#fff"
+                    shape="line"
+                    sparkCount={8}
+                    sparkSize={14}
+                    sparkRadius={30}
+                    duration={500}
+                  >
                   <a className="nav-items cursor-target color-blue-hover" href="#skills" onClick={closeMenu}>Skills</a>
+                  </ClickSpark>
+                  <ClickSpark
+                    sparkColor="#fff"
+                    shape="line"
+                    sparkCount={8}
+                    sparkSize={14}
+                    sparkRadius={30}
+                    duration={500}
+                  >
                   <a className="nav-items cursor-target color-blue-hover" href="#certificates" onClick={closeMenu}>Certificates</a>
+                  </ClickSpark>
+                  <ClickSpark
+                    sparkColor="#fff"
+                    shape="line"
+                    sparkCount={8}
+                    sparkSize={14}
+                    sparkRadius={30}
+                    duration={500}
+                  >
                   <a className="nav-items cursor-target color-blue-hover" href="#projects" onClick={closeMenu}>Projects</a>
+                  </ClickSpark>
+                  <ClickSpark
+                    sparkColor="#fff"
+                    shape="line"
+                    sparkCount={8}
+                    sparkSize={14}
+                    sparkRadius={30}
+                    duration={500}
+                  >
                   <a className="nav-items cursor-target color-blue-hover" href="#contact" onClick={closeMenu}>Contact</a>
+                  </ClickSpark>
                 </>
               ) : (
                 <>
