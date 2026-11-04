@@ -2,7 +2,6 @@
   display: none;
   width: 20px;
   height: 1px;
-  background: black;
   transition: all 0.5s ease;
 }
 
@@ -10,10 +9,12 @@
   color: grey;
   cursor: pointer;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.slide-open .nav-items { color: black; }
+.slide-open .nav-items {
+  color: black;
+}
 
 .active-item {
   padding: 10px;
@@ -22,22 +23,53 @@
   color: blue;
 }
 
-.cross-1 { transform: translateY(5px) rotate(60deg); }
-.cross-2 { transform: translateY(-5px) rotate(-60deg); }
+.cross-1 {
+  transform: translateY(5px) rotate(60deg);
+}
+
+.cross-2 {
+  transform: translateY(-5px) rotate(-60deg);
+}
 
 @keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes scale-in {
-  from { opacity: 0; transform: scale(.9); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-.hover-lift { transition: transform .3s ease, box-shadow .3s ease; }
-.hover-lift:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -12px rgba(30, 27, 75, .18); }
-.three-dots-icon { position: fixed; right: 30px; }
+.hover-lift {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -12px rgba(30, 27, 75, .18);
+}
+
+.three-dots-icon {
+  position: fixed;
+  right: 30px;
+  background: transparent;
+  border: none;
+}
 
 .mobile-slider {
   position: fixed;
@@ -64,17 +96,35 @@
   background: transparent;
 }
 
-.nav-text-container { display: flex; align-items: center; justify-content: center; gap: 20px; }
+.nav-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px ;
+}
 
-@media (max-width: 932px) and (orientation: landscape) {
-  .nav-text-container { width: 50%; gap: 50px; }
+@media (max-width: 952px) and (orientation: landscape) {
+  .nav-text-container {
+    width: 50%;
+    gap: 70px !important;
+  }
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
-  .nav-text-container { width: 50%; flex-direction: column; gap: 50px; }
-  .nav-items { font-size: 25px; }
+  .nav-text-container {
+    width: 50%;
+    flex-direction: column;
+    gap: 50px !important;
+    text-align: center;
+  }
+
+  .nav-items {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 1024px) {
-  .lines { display: block; }
+  .lines {
+    display: block;
+  }
 }

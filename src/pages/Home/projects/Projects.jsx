@@ -2,6 +2,7 @@ import SectionContainer from '../section-container/SectionContainer';
 import TiltedCard from '../../../components/effects/TiltedCard.jsx';
 import growthTrackerImg from '../../../assets/growth-tracker-img.png';
 import ClickSpark from '../../../components/effects/ClickSpark.jsx';
+import '../Home.css'
 export default function Projects() {
   return (
     <SectionContainer id="projects" className="padding-top-bottom-35" height="auto">
@@ -49,6 +50,7 @@ export default function Projects() {
               sparkSize={14}
               sparkRadius={30}
               duration={500}
+              className="clickspark"
             >
               <a className="cursor-target magic-btn gen-btn flex flex-center gap-10" href={import.meta.env.VITE_GITHUB_GROWTH_TRACKER_URL} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" /><span>Code</span>
               </a></ClickSpark>
@@ -79,14 +81,17 @@ export default function Projects() {
                 sparkCount={8}
                 sparkSize={14}
                 sparkRadius={30}
-                duration={500}><a className="text-link cursor-target" href={import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL} target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a></ClickSpark>
+                duration={500}
+                className="clickspark"><a className="text-link cursor-target" href={import.meta.env.VITE_GITHUB_STUDY_PLANNER_URL} target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a></ClickSpark>
               <ClickSpark
                 sparkColor="#fff"
                 shape="line"
                 sparkCount={8}
                 sparkSize={14}
                 sparkRadius={30}
-                duration={500}><a className="text-link cursor-target" href={import.meta.env.VITE_INTELLISTUDY_LINK} target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a></ClickSpark>
+                duration={500}
+                className="clickspark"
+                ><a className="text-link cursor-target" href={import.meta.env.VITE_INTELLISTUDY_LINK} target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a></ClickSpark>
             </div>
           </div>
         </article>
@@ -99,13 +104,15 @@ export default function Projects() {
             <ul><li>React</li><li>JavaScript</li><li>CSS</li></ul>
             <div className="project-actions">
               <ClickSpark
-  sparkColor="#fff"
-  shape="line"
-  sparkCount={8}
-  sparkSize={14}
-  sparkRadius={30}
-  duration={500}>
-              <a className="text-link cursor-target" href={import.meta.env.VITE_GITHUB_PORTFOLIO_URL} target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a></ClickSpark></div>
+                sparkColor="#fff"
+                shape="line"
+                sparkCount={8}
+                sparkSize={14}
+                sparkRadius={30}
+                duration={500}
+                className="clickspark"
+                >
+                <a className="text-link cursor-target" href={import.meta.env.VITE_GITHUB_PORTFOLIO_URL} target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a></ClickSpark></div>
           </div>
         </article>
       </div>

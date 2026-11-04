@@ -126,6 +126,10 @@ header {
   color: #ffffff;
   font-weight: 700;
 }
+.clickspark{
+  display: inline;
+  width: auto !important;
+}
 
 .header-box-20 span {
   cursor: pointer;
@@ -392,13 +396,14 @@ header {
   background: #ffffff;
   color: #0a0a0a;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .socio-media-label-sec {
   width: 100%;
-  font-size: 23px;
+  font-size: 23px !important;
   display: flex;
-  gap: 25px;
+  gap: 25px !important;
   align-items: center;
   justify-content: center;
   min-height: 90px;
@@ -1198,8 +1203,13 @@ html:has(.mainHome) {
 .mainHome .project-show-panel-secondary .project-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 18px;
   padding-top: 8px;
+}
+
+.project-actions .clickspark, .project-actions span{
+  display: inline-block ;
+  height: 20%;
 }
 
 .mainHome .text-link {

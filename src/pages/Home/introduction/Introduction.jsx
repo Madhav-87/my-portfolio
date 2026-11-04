@@ -70,6 +70,7 @@ export default function Introduction() {
               sparkSize={14}
               sparkRadius={30}
               duration={500}
+              className="clickspark"
             >
               <span tabIndex={0} role="button" aria-label="Visit GitHub profile" className="cursor-target fa-brands fa-github cursor-pointer color-blue-hover" onClick={() => window.open(import.meta.env.VITE_GITHUB_URL, '_blank')} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(import.meta.env.VITE_GITHUB_URL, '_blank'))} /></ClickSpark>
             <ClickSpark
@@ -79,6 +80,7 @@ export default function Introduction() {
               sparkSize={14}
               sparkRadius={30}
               duration={500}
+              className="clickspark"
             >
               <span tabIndex={0} role="button" aria-label="Visit LinkedIn profile" className="cursor-target fa-brands fa-linkedin cursor-pointer color-blue-hover" onClick={() => window.open(import.meta.env.VITE_LINKEDIN_URL, '_blank')} onKeyDown={(event) => handleInteractiveKeyDown(event, () => window.open(import.meta.env.VITE_LINKEDIN_URL, '_blank'))} /></ClickSpark>
             <ClickSpark
@@ -88,6 +90,7 @@ export default function Introduction() {
               sparkSize={14}
               sparkRadius={30}
               duration={500}
+              className="clickspark"
             >
               <a href="#contact" aria-label="Go to contact section" className="cursor-target fa-regular fa-envelope cursor-pointer color-blue-hover" /></ClickSpark>
             <div className="d-flex gap-5">
