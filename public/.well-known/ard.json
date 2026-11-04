@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:madhavbondhare.vercel.app:website:portfolio",
+      "displayName": "Madhav Bondhare Portfolio",
+      "type": "text/html",
+      "url": "https://madhavbondhare.vercel.app/",
+      "description": "Madhav Bondhare's portfolio with information about his background, skills, projects, certifications, and contact options.",
+      "tags": ["portfolio", "developer profile"],
+      "representativeQueries": [
+        "What projects has Madhav Bondhare built?",
+        "Which technologies does Madhav Bondhare work with?",
+        "How can I contact Madhav Bondhare?"
+      ]
+    },
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:madhavbondhare.vercel.app:website:projects",
+      "displayName": "Madhav Bondhare Project Showcase",
+      "type": "text/html",
+      "url": "https://madhavbondhare.vercel.app/projects",
+      "description": "A page presenting selected projects by Madhav Bondhare, including Growth Tracker, AI Study Planner, and the portfolio.",
+      "tags": ["projects", "web development"],
+      "representativeQueries": [
+        "Show me Madhav Bondhare's selected projects.",
+        "What is Growth Tracker?",
+        "What is the AI Study Planner?"
+      ]
+    },
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:madhavbondhare.vercel.app:project:growth-tracker",
+      "displayName": "Growth Tracker",
+      "type": "text/html",
+      "url": "https://growthtracker.vercel.app/",
+      "description": "A personal development application for setting goals, tracking progress, and building habits with planning and analytics.",
+      "tags": ["goal tracking", "productivity", "web application"],
+      "representativeQueries": [
+        "How can I track personal goals and progress?",
+        "What application helps build habits and review progress?",
+        "Open the Growth Tracker project demo."
+      ]
+    },
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:madhavbondhare.vercel.app:project:intellistudy",
+      "displayName": "IntelliStudy AI Study Planner",
+      "type": "text/html",
+      "url": "https://intellistudy-app.vercel.app/",
+      "description": "An AI-powered study planner that helps students organize learning from a syllabus and exam timeline.",
+      "tags": ["study planning", "education", "web application"],
+      "representativeQueries": [
+        "How can I create a study schedule from my syllabus?",
+        "Show me an AI study planner for students.",
+        "Open the IntelliStudy project demo."
+      ]
+    }
+  ]
+}
