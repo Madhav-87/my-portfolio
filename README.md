@@ -12,7 +12,7 @@ A personal developer portfolio built with **React + Vite**, showcasing projects,
 
 ## 📸 Preview
 
-> <img width="1897" height="903" alt="portfolio-dashboard" src="https://github.com/user-attachments/assets/4f949b30-8454-4cb2-8057-fe6f9b6fd9ed" />
+> <img width="1891" height="912" alt="image" src="https://github.com/user-attachments/assets/a9bd7bc2-4b73-4839-90a2-8ada719ef4a8" />
 
 ---
 
